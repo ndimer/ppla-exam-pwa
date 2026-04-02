@@ -1,0 +1,12 @@
+{
+  "name": "PPL-A Prawo Lotnicze",
+  "short_name": "PPL-A Quiz",
+  "description": "Pytania egzaminacyjne z prawa lotniczego PPL(A)",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
