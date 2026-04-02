@@ -1,10 +1,12 @@
-const CACHE = 'ppla-v4';
+const CACHE = 'ppla-v5';
 const PRECACHE = [
   './',
   './index.html',
   './app.js',
   './manifest.json',
   './icon.svg',
+  './icon-180.png',
+  './icon-512.png',
   './data/questions-prawo.json',
 ];
 
