@@ -10,7 +10,7 @@ async function init() {
   loadState();
 
   try {
-    const res = await fetch('./data/questions.json');
+    const res = await fetch('./data/questions-prawo.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
     questions = await res.json();
   } catch {
@@ -126,10 +126,10 @@ function renderProgress() {
   const correct = Object.entries(state.answers)
     .filter(([qi, ai]) => questions[+qi]?.answers[+ai]?.correct).length;
   const total = questions.length;
-  const pct = total ? (answered / total * 100).toFixed(1) : 0;
+  const pct = total ? Math.round(answered / total * 100) : 0;
 
   $('progress-bar').style.width = pct + '%';
-  $('progress-text').textContent = `${answered} / ${total} odpowiedzi`;
+  $('progress-text').textContent = `${answered} / ${total} odpowiedzi (${pct}%)`;
 
   // drawer stats (updated on open)
   const drawerStats = $('drawer-stats');
@@ -154,12 +154,24 @@ function renderQuestions() {
       return `<button class="${cls}" data-q="${qIndex}" data-answer="${aIndex}">${esc(a.text)}</button>`;
     }).join('');
 
+    const refBtn = q.url
+      ? `<a class="ref-btn" href="${esc(q.url)}" target="_blank" rel="noopener noreferrer"
+            aria-label="Wyjaśnienie pytania ${esc(q.id)}">
+           <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+             <circle cx="12" cy="12" r="10"/>
+             <path d="M12 16v-4M12 8h.01"/>
+           </svg>
+         </a>`
+      : '';
+
     return `
       <div class="question-card" data-question="${qIndex}">
         <div class="question-meta">
           <span class="question-id">${esc(q.id)}</span>
           <span class="meta-sep">|</span>
-          <span class="lightbulb">💡</span>
+          ${refBtn}
         </div>
         <p class="question-text">${esc(q.question)}</p>
         <div class="answers-list">${answersHtml}</div>

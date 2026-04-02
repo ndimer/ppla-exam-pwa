@@ -92,6 +92,65 @@ sudo certbot --nginx -d your-domain.com
 
 ---
 
+## Forcing an update on a real device
+
+The service worker caches all app files aggressively so the app works offline.
+This means deploying new files is **not enough** — the device will keep serving the old cache
+until it detects the service worker has changed.
+
+### How updates propagate automatically
+
+Every deploy should bump the cache version in `sw.js`:
+```js
+const CACHE = 'ppla-v4'; // increment on every deploy
+```
+When the browser fetches the new `sw.js` and sees a different cache name, it installs the new
+worker and discards the old cache. This happens in the background — the user sees the update
+**on the next app open** (not the current one).
+
+### Forcing an immediate reload
+
+#### iPhone / iPad — Safari (browser tab)
+1. Open the page in Safari.
+2. Pull down to refresh, or tap the address bar and press **Go**.
+3. If still stale: **Settings → Safari → Clear History and Website Data** (clears all sites).
+   For just one site: **Settings → Safari → Advanced → Website Data** → find the domain → swipe to delete.
+4. Reopen the URL.
+
+#### iPhone / iPad — installed PWA (home screen icon)
+The PWA runs in a standalone context separate from Safari — clearing Safari data does **not** affect it.
+1. **Delete the app** from the home screen (long-press → Remove App → Delete).
+2. Open the URL in Safari again and reinstall via Share → Add to Home Screen.
+
+This is the only reliable way to force a full reset of a Safari PWA cache.
+
+#### Android — Chrome
+1. Open Chrome, tap ⋮ → **Settings → Privacy and security → Clear browsing data**.
+2. Tick *Cached images and files* and *Cookies and site data* for the site, then Clear.
+3. Alternatively: open Chrome DevTools (via desktop remote debugging) →
+   Application → Service Workers → **Unregister**, then reload.
+
+#### Desktop (Chrome / Edge)
+- Hard reload: `Cmd+Shift+R` (macOS) / `Ctrl+Shift+R` (Windows) — bypasses cache for the page but not the SW.
+- Full reset: DevTools → Application → Service Workers → **Unregister** → reload the page.
+
+#### Desktop (Safari)
+- `Cmd+Option+R` for a hard reload.
+- Or: Develop menu → **Empty Caches**, then reload.
+
+---
+
+### Why my change isn't showing up — checklist
+
+| Symptom | Fix |
+|---|---|
+| New deploy, old content still visible | Bump `CACHE` version in `sw.js` and redeploy |
+| Bumped version but still stale | Wait one full app close+reopen cycle |
+| Installed PWA on iPhone never updates | Delete the home screen app, reinstall |
+| Works on desktop but not phone | Phone is likely serving SW cache — delete and reinstall PWA |
+
+---
+
 ## Updating questions
 
 Re-run `node generate-json.js` from the parent directory whenever `Prawo.md` changes,

@@ -1,0 +1,9 @@
+{
+  "name": "ppla-exam-pwa",
+  "version": "1.0.0",
+  "description": "PPL-A aviation law quiz PWA",
+  "private": true,
+  "scripts": {
+    "serve": "npx serve . --listen 3000"
+  }
+}

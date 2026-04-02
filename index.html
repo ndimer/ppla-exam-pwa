@@ -78,6 +78,52 @@
     }
     .answers-list { display: flex; flex-direction: column; }
 
+    /* ── URL reference bubble ───────────────────────────── */
+    .ref-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #dbeafe;
+      color: #1d4ed8;
+      text-decoration: none;
+      flex-shrink: 0;
+      transition: background 0.12s, transform 0.12s;
+    }
+    .ref-btn:hover { background: #bfdbfe; transform: scale(1.1); }
+
+    /* ── Mini answered progress in pagination ───────────── */
+    .page-nav-center { text-align: center; }
+    .mini-progress {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 5px;
+      justify-content: center;
+    }
+    .mini-track {
+      width: 72px;
+      height: 4px;
+      background: #e5e7eb;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .mini-fill {
+      height: 100%;
+      background: #3b82f6;
+      border-radius: 2px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+    .mini-pct {
+      font-size: 11px;
+      color: #9ca3af;
+      min-width: 30px;
+      text-align: left;
+    }
+
     /* ── Drawer ─────────────────────────────────────────── */
     #drawer {
       position: fixed;
