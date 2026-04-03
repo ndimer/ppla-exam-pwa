@@ -2,7 +2,7 @@ const PAGE_SIZE = 10;
 const STORAGE_KEY = 'ppla-quiz-state';
 
 let questions = [];
-let state = { page: 0, answers: {} };
+let state = { page: 0, answers: {}, shuffles: {} };
 
 const $ = id => document.getElementById(id);
 
@@ -23,6 +23,12 @@ async function init() {
   // clamp page in case questions count changed
   const maxPage = Math.max(0, Math.ceil(questions.length / PAGE_SIZE) - 1);
   if (state.page > maxPage) state.page = maxPage;
+
+  // generate shuffles on first load (no stored shuffles yet)
+  if (!state.shuffles || Object.keys(state.shuffles).length === 0) {
+    state.shuffles = generateShuffles();
+    saveState();
+  }
 
   setupEvents();
   render();
@@ -68,7 +74,7 @@ function setupEvents() {
   // Reset
   $('reset-btn').addEventListener('click', () => {
     if (confirm('Czy na pewno chcesz zresetować wszystkie odpowiedzi i wrócić do strony 1?')) {
-      state = { page: 0, answers: {} };
+      state = { page: 0, answers: {}, shuffles: generateShuffles() };
       saveState();
       closeDrawer();
       render();
@@ -106,9 +112,11 @@ function selectAnswer(qIndex, aIndex) {
   const card = document.querySelector(`[data-question="${qIndex}"]`);
   if (!card) return;
   const q = questions[qIndex];
+  const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
   card.querySelectorAll('[data-answer]').forEach(btn => {
-    const i = parseInt(btn.dataset.answer);
-    btn.className = answerClass(i === aIndex, q.answers[i].correct);
+    const displayIdx = parseInt(btn.dataset.answer);
+    const origIdx = shuffleOrder[displayIdx];
+    btn.className = answerClass(displayIdx === aIndex, q.answers[origIdx].correct && displayIdx === aIndex);
   });
   renderProgress();
 }
@@ -124,7 +132,12 @@ function render() {
 function renderProgress() {
   const answered = Object.keys(state.answers).length;
   const correct = Object.entries(state.answers)
-    .filter(([qi, ai]) => questions[+qi]?.answers[+ai]?.correct).length;
+    .filter(([qi, ai]) => {
+      const q = questions[+qi];
+      const shuffleOrder = state.shuffles[+qi];
+      const origIdx = shuffleOrder ? shuffleOrder[+ai] : +ai;
+      return q?.answers[origIdx]?.correct;
+    }).length;
   const total = questions.length;
   const pct = total ? Math.round(answered / total * 100) : 0;
 
@@ -149,9 +162,11 @@ function renderQuestions() {
     const qIndex = start + i;
     const selected = state.answers[qIndex] ?? -1;
 
-    const answersHtml = q.answers.map((a, aIndex) => {
-      const cls = answerClass(aIndex === selected, a.correct && aIndex === selected);
-      return `<button class="${cls}" data-q="${qIndex}" data-answer="${aIndex}">${esc(a.text)}</button>`;
+    const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
+    const answersHtml = shuffleOrder.map((origIdx, displayIdx) => {
+      const a = q.answers[origIdx];
+      const cls = answerClass(displayIdx === selected, a.correct && displayIdx === selected);
+      return `<button class="${cls}" data-q="${qIndex}" data-answer="${displayIdx}">${esc(a.text)}</button>`;
     }).join('');
 
     const refBtn = q.url
@@ -221,6 +236,23 @@ function esc(s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function generateShuffles() {
+  const shuffles = {};
+  questions.forEach((q, i) => {
+    shuffles[i] = shuffleArray(q.answers.map((_, idx) => idx));
+  });
+  return shuffles;
 }
 
 function registerSW() {
