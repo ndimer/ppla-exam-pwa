@@ -1,13 +1,17 @@
 const PAGE_SIZE = 10;
 const STORAGE_KEY = 'ppla-quiz-state';
+const FAV_KEY    = 'ppla-quiz-favorites';
 
-let questions = [];
-let state = { page: 0, answers: {}, shuffles: {} };
+let questions  = [];
+let state      = { page: 0, answers: {}, shuffles: {} };
+let favState   = { ids: [], answers: {}, page: 0 };
+let currentView = 'all'; // 'all' | 'fav'
 
 const $ = id => document.getElementById(id);
 
 async function init() {
   loadState();
+  loadFavState();
 
   try {
     const res = await fetch('./data/questions-prawo.json');
@@ -48,19 +52,32 @@ function saveState() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
+function loadFavState() {
+  try {
+    const s = localStorage.getItem(FAV_KEY);
+    if (s) favState = JSON.parse(s);
+  } catch {}
+}
+
+function saveFavState() {
+  localStorage.setItem(FAV_KEY, JSON.stringify(favState));
+}
+
 // ── Events ───────────────────────────────────────────────────────────────────
 
 function setupEvents() {
   // Pagination
   ['prev-top', 'prev-bot'].forEach(id =>
-    $(id).addEventListener('click', () => changePage(state.page - 1))
+    $(id).addEventListener('click', () => changePage(currentPage() - 1))
   );
   ['next-top', 'next-bot'].forEach(id =>
-    $(id).addEventListener('click', () => changePage(state.page + 1))
+    $(id).addEventListener('click', () => changePage(currentPage() + 1))
   );
 
-  // Answer selection (event delegation)
+  // Answer selection + favourite toggle (event delegation)
   $('questions').addEventListener('click', e => {
+    const favBtn = e.target.closest('[data-fav-toggle]');
+    if (favBtn) { toggleFavorite(parseInt(favBtn.dataset.favToggle)); return; }
     const btn = e.target.closest('[data-answer]');
     if (!btn) return;
     selectAnswer(parseInt(btn.dataset.q), parseInt(btn.dataset.answer));
@@ -71,11 +88,27 @@ function setupEvents() {
   $('close-drawer').addEventListener('click', closeDrawer);
   $('overlay').addEventListener('click', closeDrawer);
 
-  // Reset
+  // View selector
+  $('view-all-btn').addEventListener('click', () => switchView('all'));
+  $('view-fav-btn').addEventListener('click', () => switchView('fav'));
+
+  // Reset all answers (favourites list is preserved)
   $('reset-btn').addEventListener('click', () => {
     if (confirm('Czy na pewno chcesz zresetować wszystkie odpowiedzi i wrócić do strony 1?')) {
       state = { page: 0, answers: {}, shuffles: generateShuffles() };
       saveState();
+      closeDrawer();
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+
+  // Reset favourites answers only (favourite list preserved)
+  $('reset-fav-btn').addEventListener('click', () => {
+    if (confirm('Czy na pewno chcesz zresetować odpowiedzi ulubionych pytań?')) {
+      favState.answers = {};
+      favState.page = 0;
+      saveFavState();
       closeDrawer();
       render();
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -87,16 +120,37 @@ function setupEvents() {
   $('goto-input').addEventListener('keydown', e => { if (e.key === 'Enter') gotoPage(); });
 }
 
+function currentPage() {
+  return currentView === 'fav' ? favState.page : state.page;
+}
+
+function switchView(view) {
+  currentView = view;
+  $('view-all-btn').classList.toggle('active', view === 'all');
+  $('view-fav-btn').classList.toggle('active', view === 'fav');
+  closeDrawer();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 function changePage(p) {
-  const max = Math.ceil(questions.length / PAGE_SIZE) - 1;
-  state.page = Math.max(0, Math.min(p, max));
-  saveState();
+  const totalQs = currentView === 'fav' ? favQuestions().length : questions.length;
+  const max = Math.max(0, Math.ceil(totalQs / PAGE_SIZE) - 1);
+  const clamped = Math.max(0, Math.min(p, max));
+  if (currentView === 'fav') {
+    favState.page = clamped;
+    saveFavState();
+  } else {
+    state.page = clamped;
+    saveState();
+  }
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function gotoPage() {
-  const total = Math.ceil(questions.length / PAGE_SIZE);
+  const totalQs = currentView === 'fav' ? favQuestions().length : questions.length;
+  const total = Math.ceil(totalQs / PAGE_SIZE);
   const p = parseInt($('goto-input').value, 10);
   if (!isNaN(p) && p >= 1 && p <= total) {
     changePage(p - 1);
@@ -104,14 +158,51 @@ function gotoPage() {
   }
 }
 
+function toggleFavorite(qIndex) {
+  const qId = questions[qIndex].id;
+  const pos = favState.ids.indexOf(qId);
+  if (pos >= 0) {
+    favState.ids.splice(pos, 1);
+    delete favState.answers[qId];
+    // clamp favourites page after removal
+    const maxFavPage = Math.max(0, Math.ceil(favState.ids.length / PAGE_SIZE) - 1);
+    if (favState.page > maxFavPage) favState.page = maxFavPage;
+  } else {
+    favState.ids.push(qId);
+  }
+  saveFavState();
+
+  if (currentView === 'fav') {
+    // List changed — full re-render
+    render();
+  } else {
+    // Partial update: just flip the star on the card
+    const card = document.querySelector(`[data-question="${qIndex}"]`);
+    if (card) {
+      const btn = card.querySelector('[data-fav-toggle]');
+      if (btn) {
+        const nowFav = favState.ids.includes(qId);
+        btn.classList.toggle('active', nowFav);
+        btn.textContent = nowFav ? '★' : '☆';
+        btn.setAttribute('aria-label', nowFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych');
+      }
+    }
+  }
+}
+
 function selectAnswer(qIndex, aIndex) {
-  state.answers[qIndex] = aIndex;
-  saveState();
+  const q = questions[qIndex];
+  if (currentView === 'fav') {
+    favState.answers[q.id] = aIndex;
+    saveFavState();
+  } else {
+    state.answers[qIndex] = aIndex;
+    saveState();
+  }
 
   // Update only the affected card's buttons (no full re-render)
   const card = document.querySelector(`[data-question="${qIndex}"]`);
   if (!card) return;
-  const q = questions[qIndex];
   const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
   card.querySelectorAll('[data-answer]').forEach(btn => {
     const displayIdx = parseInt(btn.dataset.answer);
@@ -130,74 +221,139 @@ function render() {
 }
 
 function renderProgress() {
-  const answered = Object.keys(state.answers).length;
-  const correct = Object.entries(state.answers)
-    .filter(([qi, ai]) => {
-      const q = questions[+qi];
-      const shuffleOrder = state.shuffles[+qi];
-      const origIdx = shuffleOrder ? shuffleOrder[+ai] : +ai;
-      return q?.answers[origIdx]?.correct;
-    }).length;
-  const total = questions.length;
+  let answered, correct, total;
+
+  if (currentView === 'fav') {
+    const favQs = favQuestions();
+    total    = favQs.length;
+    answered = 0;
+    correct  = 0;
+    favQs.forEach(({ q, qIndex }) => {
+      const sel = favState.answers[q.id];
+      if (sel === undefined) return;
+      answered++;
+      const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
+      if (q.answers[shuffleOrder[sel]]?.correct) correct++;
+    });
+  } else {
+    total    = questions.length;
+    answered = Object.keys(state.answers).length;
+    correct  = Object.entries(state.answers)
+      .filter(([qi, ai]) => {
+        const q          = questions[+qi];
+        const shuffleOrder = state.shuffles[+qi];
+        const origIdx    = shuffleOrder ? shuffleOrder[+ai] : +ai;
+        return q?.answers[origIdx]?.correct;
+      }).length;
+  }
+
   const pct = total ? Math.round(answered / total * 100) : 0;
-
   $('progress-bar').style.width = pct + '%';
-  $('progress-text').textContent = `${answered} / ${total} odpowiedzi (${pct}%)`;
+  $('progress-text').textContent = currentView === 'fav'
+    ? `Ulubione: ${answered} / ${total} odpowiedzi (${pct}%)`
+    : `${answered} / ${total} odpowiedzi (${pct}%)`;
 
-  // drawer stats (updated on open)
   const drawerStats = $('drawer-stats');
   if (drawerStats) {
+    const label = currentView === 'fav' ? 'Ulubione – odpowiedzi' : 'Odpowiedziano';
     drawerStats.innerHTML =
-      `<div class="stat-row"><span>Odpowiedziano</span><strong>${answered} / ${total}</strong></div>` +
+      `<div class="stat-row"><span>${label}</span><strong>${answered} / ${total}</strong></div>` +
       `<div class="stat-row"><span>Poprawnie</span><strong class="correct-count">${correct}</strong></div>` +
       `<div class="stat-row"><span>Błędnie</span><strong class="wrong-count">${answered - correct}</strong></div>`;
   }
 }
 
+// Returns [{q, qIndex}] for all currently valid favourite questions
+function favQuestions() {
+  return favState.ids
+    .map(id => {
+      const qIndex = questions.findIndex(q => q.id === id);
+      return qIndex >= 0 ? { q: questions[qIndex], qIndex } : null;
+    })
+    .filter(Boolean);
+}
+
 function renderQuestions() {
-  const start = state.page * PAGE_SIZE;
+  if (currentView === 'fav') {
+    renderFavQuestions();
+  } else {
+    renderAllQuestions();
+  }
+}
+
+function renderAllQuestions() {
+  const start  = state.page * PAGE_SIZE;
   const pageQs = questions.slice(start, start + PAGE_SIZE);
 
   $('questions').innerHTML = pageQs.map((q, i) => {
-    const qIndex = start + i;
+    const qIndex   = start + i;
     const selected = state.answers[qIndex] ?? -1;
-
-    const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
-    const answersHtml = shuffleOrder.map((origIdx, displayIdx) => {
-      const a = q.answers[origIdx];
-      const cls = answerClass(displayIdx === selected, a.correct && displayIdx === selected);
-      return `<button class="${cls}" data-q="${qIndex}" data-answer="${displayIdx}">${esc(a.text)}</button>`;
-    }).join('');
-
-    const refBtn = q.url
-      ? `<a class="ref-btn" href="${esc(q.url)}" target="_blank" rel="noopener noreferrer"
-            aria-label="Wyjaśnienie pytania ${esc(q.id)}">
-           <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2.5"
-                stroke-linecap="round" stroke-linejoin="round">
-             <circle cx="12" cy="12" r="10"/>
-             <path d="M12 16v-4M12 8h.01"/>
-           </svg>
-         </a>`
-      : '';
-
-    return `
-      <div class="question-card" data-question="${qIndex}">
-        <div class="question-meta">
-          <span class="question-id">${esc(q.id)}</span>
-          <span class="meta-sep">|</span>
-          ${refBtn}
-        </div>
-        <p class="question-text">${esc(q.question)}</p>
-        <div class="answers-list">${answersHtml}</div>
-      </div>`;
+    const isFav    = favState.ids.includes(q.id);
+    return questionCardHtml(q, qIndex, selected, isFav);
   }).join('');
 }
 
+function renderFavQuestions() {
+  const all = favQuestions();
+  if (all.length === 0) {
+    $('questions').innerHTML =
+      '<p class="text-center text-gray-400 py-16 text-sm">' +
+      'Brak ulubionych pytań.<br>' +
+      'Dodaj pytania klikając gwiazdkę ☆ na karcie pytania.</p>';
+    return;
+  }
+  const start  = favState.page * PAGE_SIZE;
+  const pageQs = all.slice(start, start + PAGE_SIZE);
+
+  $('questions').innerHTML = pageQs.map(({ q, qIndex }) => {
+    const selected = favState.answers[q.id] ?? -1;
+    return questionCardHtml(q, qIndex, selected, true);
+  }).join('');
+}
+
+function questionCardHtml(q, qIndex, selected, isFav) {
+  const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
+
+  const answersHtml = shuffleOrder.map((origIdx, displayIdx) => {
+    const a   = q.answers[origIdx];
+    const cls = answerClass(displayIdx === selected, a.correct && displayIdx === selected);
+    return `<button class="${cls}" data-q="${qIndex}" data-answer="${displayIdx}">${esc(a.text)}</button>`;
+  }).join('');
+
+  const refBtn = q.url
+    ? `<a class="ref-btn" href="${esc(q.url)}" target="_blank" rel="noopener noreferrer"
+          aria-label="Wyjaśnienie pytania ${esc(q.id)}">
+         <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+           <circle cx="12" cy="12" r="10"/>
+           <path d="M12 16v-4M12 8h.01"/>
+         </svg>
+       </a>`
+    : '';
+
+  const starLabel = isFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych';
+  const starBtn = `<button class="fav-btn${isFav ? ' active' : ''}" data-fav-toggle="${qIndex}"
+    aria-label="${starLabel}">${isFav ? '★' : '☆'}</button>`;
+
+  return `
+    <div class="question-card" data-question="${qIndex}">
+      <div class="question-meta">
+        <span class="question-id">${esc(q.id)}</span>
+        <span class="meta-sep">|</span>
+        ${refBtn}
+        ${starBtn}
+      </div>
+      <p class="question-text">${esc(q.question)}</p>
+      <div class="answers-list">${answersHtml}</div>
+    </div>`;
+}
+
 function renderPagination() {
-  const total = Math.ceil(questions.length / PAGE_SIZE);
-  const cur = state.page;
-  const label = `Strona ${cur + 1} z ${total}`;
+  const totalQs = currentView === 'fav' ? favQuestions().length : questions.length;
+  const total   = Math.max(1, Math.ceil(totalQs / PAGE_SIZE));
+  const cur     = currentPage();
+  const label   = `Strona ${cur + 1} z ${total}`;
 
   $('page-info-top').textContent = label;
   $('page-info-bot').textContent = label;
@@ -205,8 +361,7 @@ function renderPagination() {
   ['prev-top', 'prev-bot'].forEach(id => { $(id).disabled = cur === 0; });
   ['next-top', 'next-bot'].forEach(id => { $(id).disabled = cur >= total - 1; });
 
-  // update goto max
-  $('goto-input').max = total;
+  $('goto-input').max         = total;
   $('goto-input').placeholder = `1–${total}`;
 }
 

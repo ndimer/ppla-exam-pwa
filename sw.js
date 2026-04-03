@@ -1,4 +1,4 @@
-const CACHE = 'ppla-v5';
+const CACHE = 'ppla-v6';
 const PRECACHE = [
   './',
   './index.html',

@@ -158,6 +158,39 @@
     .correct-count { color: #16a34a; }
     .wrong-count   { color: #b91c1c; }
 
+    /* ── Favourite star button ──────────────────────────── */
+    .fav-btn {
+      margin-left: auto;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+      color: #cbd5e1;
+      padding: 0 2px;
+      flex-shrink: 0;
+      transition: color 0.12s, transform 0.12s;
+    }
+    .fav-btn:hover { color: #f59e0b; transform: scale(1.15); }
+    .fav-btn.active { color: #f59e0b; }
+
+    /* ── View selector buttons in drawer ────────────────── */
+    .view-btn {
+      flex: 1;
+      padding: 9px 4px;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 8px;
+      background: #fff;
+      color: #374151;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.1s, border-color 0.1s, color 0.1s;
+    }
+    .view-btn.active { background: #2563eb; border-color: #2563eb; color: #fff; }
+    .view-btn:not(.active):hover { background: #f8fafc; border-color: #94a3b8; }
+
     /* ── Nav buttons ────────────────────────────────────── */
     .nav-btn {
       display: inline-flex;
@@ -261,6 +294,12 @@
       </button>
     </div>
 
+    <!-- View selector -->
+    <div class="flex gap-2 mb-5">
+      <button id="view-all-btn" class="view-btn active">Wszystkie pytania</button>
+      <button id="view-fav-btn" class="view-btn">Ulubione</button>
+    </div>
+
     <!-- Stats -->
     <div id="drawer-stats"
          class="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3 mb-6 text-sm">
@@ -292,6 +331,18 @@
         <polyline points="2,12 2,8 6,8"/>
       </svg>
       Resetuj wszystkie odpowiedzi
+    </button>
+
+    <button id="reset-fav-btn"
+      class="w-full flex items-center justify-center gap-2 bg-amber-500
+             hover:bg-amber-600 text-white py-3 rounded-xl font-semibold
+             transition-colors text-sm mt-3">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M2 8a6 6 0 1 1 1.5 4"/>
+        <polyline points="2,12 2,8 6,8"/>
+      </svg>
+      Resetuj odpowiedzi ulubionych
     </button>
 
     <p class="text-xs text-gray-400 mt-3 text-center">

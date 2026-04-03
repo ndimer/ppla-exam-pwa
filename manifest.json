@@ -1,6 +1,6 @@
 {
   "name": "PPL-A Prawo Lotnicze",
-  "short_name": "PPL-A Quiz",
+  "short_name": "PPL(A) Exam",
   "description": "Pytania egzaminacyjne z prawa lotniczego PPL(A)",
   "start_url": "./",
   "display": "standalone",
