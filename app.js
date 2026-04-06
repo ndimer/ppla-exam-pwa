@@ -36,6 +36,17 @@ async function init() {
 
   setupEvents();
   render();
+
+  // Restore scroll position after reload (e.g. PWA waking from inactivity)
+  const savedScroll = currentView === 'fav'
+    ? (favState.scrollY ?? 0)
+    : (state.scrollY ?? 0);
+  if (savedScroll > 0) {
+    // Double rAF ensures the browser has painted the content before scrolling,
+    // otherwise scrollTo may be clamped if page height isn't established yet.
+    requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, savedScroll)));
+  }
+
   registerSW();
 }
 
@@ -95,7 +106,7 @@ function setupEvents() {
   // Reset all answers (favourites list is preserved)
   $('reset-btn').addEventListener('click', () => {
     if (confirm('Czy na pewno chcesz zresetować wszystkie odpowiedzi i wrócić do strony 1?')) {
-      state = { page: 0, answers: {}, shuffles: generateShuffles() };
+      state = { page: 0, answers: {}, shuffles: generateShuffles(), scrollY: 0 };
       saveState();
       closeDrawer();
       render();
@@ -108,6 +119,7 @@ function setupEvents() {
     if (confirm('Czy na pewno chcesz zresetować odpowiedzi ulubionych pytań?')) {
       favState.answers = {};
       favState.page = 0;
+      favState.scrollY = 0;
       saveFavState();
       closeDrawer();
       render();
@@ -118,6 +130,31 @@ function setupEvents() {
   // Go-to-page
   $('goto-btn').addEventListener('click', gotoPage);
   $('goto-input').addEventListener('keydown', e => { if (e.key === 'Enter') gotoPage(); });
+
+  // Persist scroll position so it can be restored after PWA reload
+  function saveScrollNow() {
+    const y = window.scrollY;
+    if (currentView === 'fav') {
+      favState.scrollY = y;
+      saveFavState();
+    } else {
+      state.scrollY = y;
+      saveState();
+    }
+  }
+
+  let scrollSaveTimer = null;
+  window.addEventListener('scroll', () => {
+    clearTimeout(scrollSaveTimer);
+    scrollSaveTimer = setTimeout(saveScrollNow, 200);
+  }, { passive: true });
+
+  // Save immediately when the page is hidden (tab close, PWA backgrounded, etc.)
+  // These events are synchronous so localStorage writes complete before unload.
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') saveScrollNow();
+  });
+  window.addEventListener('pagehide', saveScrollNow);
 }
 
 function currentPage() {
@@ -126,6 +163,15 @@ function currentPage() {
 
 function switchView(view) {
   currentView = view;
+  // Clear stored scroll for the view being entered so a reload after this
+  // switch correctly restores to the top rather than a stale position.
+  if (view === 'fav') {
+    favState.scrollY = 0;
+    saveFavState();
+  } else {
+    state.scrollY = 0;
+    saveState();
+  }
   $('view-all-btn').classList.toggle('active', view === 'all');
   $('view-fav-btn').classList.toggle('active', view === 'fav');
   closeDrawer();
@@ -139,9 +185,11 @@ function changePage(p) {
   const clamped = Math.max(0, Math.min(p, max));
   if (currentView === 'fav') {
     favState.page = clamped;
+    favState.scrollY = 0;
     saveFavState();
   } else {
     state.page = clamped;
+    state.scrollY = 0;
     saveState();
   }
   render();
