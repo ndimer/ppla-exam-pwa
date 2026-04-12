@@ -1,0 +1,1267 @@
+[
+  {
+    "id": "PL030-0001",
+    "question": "Błąd barometryczny wysokościomierza pojawia się, gdy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Ciśnienie na poziomie morza (Mean Sea Level) różni się od wartości 1013.25hPa.",
+        "correct": true
+      },
+      {
+        "text": "Gradient zmiany gęstości jest inny niż standardowy.",
+        "correct": false
+      },
+      {
+        "text": "Gradient zmiany ciśnienia jest inny niż ISA.",
+        "correct": false
+      },
+      {
+        "text": "Wysokościomierz został nagrzany (np.w świetle słonecznym) do wysokiej temperatury.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0002",
+    "question": "Błąd temperaturowy wysokościomierza pojawia się, gdy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Gradient zmiany temperatury jest inny niż standardowy –  czyli warunki różnią się od tych zdefiniowanych Międzynarodową Atmosferą Wzorcową.",
+        "correct": true
+      },
+      {
+        "text": "Gradient zmiany ciśnienia jest inny niż standardowy.",
+        "correct": false
+      },
+      {
+        "text": "Wysokościomierz został nagrzany (np.w świetle słonecznym) do wysokiej temperatury.",
+        "correct": false
+      },
+      {
+        "text": "Ciśnienie npm (Mean Sea Level) różni się od wartości 1013.25hPa.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0003",
+    "question": "Ciężar elementu 55 kg, ramie 2.3 m. Moment = [kgm]",
+    "url": null,
+    "answers": [
+      {
+        "text": "126.5",
+        "correct": true
+      },
+      {
+        "text": "23.9",
+        "correct": false
+      },
+      {
+        "text": "6957",
+        "correct": false
+      },
+      {
+        "text": "0.0418",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0005",
+    "question": "Jeśli środek ciężkości znajduje się blisko skrajnego przedniego położenia to nastąpi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zwiększy się stateczność podłużna (co spowoduje większe siły na drążku przy manewrach).",
+        "correct": true
+      },
+      {
+        "text": "Zwiększy się manewrowość samolotu / szybowca.",
+        "correct": false
+      },
+      {
+        "text": "Zwiększy się stateczność podłużna (co spowoduje mniejsze siły na drążku przy manewrach).",
+        "correct": false
+      },
+      {
+        "text": "Będą występowały mniejsze siły na drążku.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0007",
+    "question": "Międzynarodowa Atmosfera Wzorcowa (International Standard Atmosphere) definiuje następujące warunki na poziomie morza: temperatura / ciśnienie  / gęstość / gradient temperatury:",
+    "url": null,
+    "answers": [
+      {
+        "text": "15°C / 1013,25 hPa / 1.225 kg/m3 /  - 6.5°C na 1000 m",
+        "correct": true
+      },
+      {
+        "text": "15°C / 1013,25 mb / 1.225 kg/m3 / 1.98°C na 1000m",
+        "correct": false
+      },
+      {
+        "text": "0°C / 1.013 Bar / 1225 g/m3 / 1.98°C na 1000 ft",
+        "correct": false
+      },
+      {
+        "text": "15°C / 29.92 in.Hg / 1013 kg/m3 / 1.98°C na 1000 ft.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0008",
+    "question": "Środek ciężkości jest wyrażony w:",
+    "url": null,
+    "answers": [
+      {
+        "text": "w procentach średniej cięciwy aerodynamicznej (% MAC) lub odległości (mm, cm, inch) położenia S.C. względem punktu pomiarowego \"\"DATUM\"\"",
+        "correct": true
+      },
+      {
+        "text": "w procentach średniej cięciwy aerodynamicznej ciężkości (% MAC).",
+        "correct": false
+      },
+      {
+        "text": "w procentach cięciwy aerodynamicznej przy kadłubie (% MAC).",
+        "correct": false
+      },
+      {
+        "text": "w procentach średniej cięciwy aerodynamicznej liczonej w średniej rozpiętości (% MAC).",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0009",
+    "question": "Środek ciężkości można zdefiniować jako:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Punkt, w którym skoncentrowana jest masa statku powietrznego.",
+        "correct": true
+      },
+      {
+        "text": "Punkt, do którego przyłożone są wszystkie siły działające na statek powietrzny.",
+        "correct": false
+      },
+      {
+        "text": "Punkt, do którego przyłożone są siły nośna i ciężkości - działające na statek powietrzny.",
+        "correct": false
+      },
+      {
+        "text": "Punkt, do którego przyłożone są siły oporu działające na statek powietrzny.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0010",
+    "question": "Ważenie statku powietrznego (SP): odczyt na wadze pod przednim podwoziem 155 kg, odczyt – suma na głównym 320 kg. Odległość przód SP – przednie podwozie 0.8m, przód SP - główne 2.4 m. Jaka jest odległość przód SP – środek ciężkości?",
+    "url": null,
+    "answers": [
+      {
+        "text": "1.88 m",
+        "correct": true
+      },
+      {
+        "text": "2.92",
+        "correct": false
+      },
+      {
+        "text": "3.2",
+        "correct": false
+      },
+      {
+        "text": "1.68",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0011",
+    "question": "Ważenie statku powietrznego (SP): odczyt na wadze pod przednim podwoziem 205 kg, odczyt – suma na głównym 420 kg. Odległość przód SP – przednie podwozie 0.9m, przód SP - główne 2.6 m. Jaka jest odległość przód SP – środek ciężkości?",
+    "url": null,
+    "answers": [
+      {
+        "text": "2.04 m",
+        "correct": true
+      },
+      {
+        "text": "3.12 m",
+        "correct": false
+      },
+      {
+        "text": "1.88 m",
+        "correct": false
+      },
+      {
+        "text": "2.09 m",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0012",
+    "question": "Wyrażenie (wzór) na moment (siły): Moment =",
+    "url": null,
+    "answers": [
+      {
+        "text": "siła (ciężar) mnożone przez ramię działania siły.",
+        "correct": true
+      },
+      {
+        "text": "siła (ciężar) dzielone przez ramię działania siły.",
+        "correct": false
+      },
+      {
+        "text": "siła (ciężar) x odległość środka ciężkości od datum.",
+        "correct": false
+      },
+      {
+        "text": "ramię działania siły dzielone przez siłę (ciężar)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0025",
+    "question": "Wysokość ciśnieniową lotniska danego dnia możemy ustalić:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Odczytując wysokość wskazywaną przez wysokościomierz nastawiony na 1013.2 hPa.",
+        "correct": true
+      },
+      {
+        "text": "Odczytujemy wysokość z wysokościomierza nastawionego na 1013.2hPa, a następnie korygujemy ją, ze względu odczytaną temperaturę otoczenia.",
+        "correct": false
+      },
+      {
+        "text": "Odczytujemy wysokość z wysokościomierza nastawionego na aktualne QNH, a następnie skorygujemyją ze względu odczytaną temperaturę otoczenia.",
+        "correct": false
+      },
+      {
+        "text": "Zawsze odczytując wysokość wskazywaną przez wysokościomierz nastawiony na aktualne QNH.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0027",
+    "question": "„Wpływ ziemi” pozwala na:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Oderwanie samolotu przy mniejszej prędkości, ale zjawisko zanika na wysokości równej w przybliżeniu rozpiętości i osiągi spadają.",
+        "correct": true
+      },
+      {
+        "text": "Osiągnięcie większej mocy silnika blisko ziemi (dotyczy silników bez sprężarkowych).",
+        "correct": false
+      },
+      {
+        "text": "Lepszą obserwacje otoczenia przez pilota ze względu na szersze pole widzenia blisko ziemi.",
+        "correct": false
+      },
+      {
+        "text": "Osiągnięcie większego ciągu silnika blisko ziemi – efekt ten zanika na wysokości równej w przybliżeniu rozpiętości samolotu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0028",
+    "question": "„Wpływ ziemi” to zjawisko polegające na:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Redukcji oporu indukowanego oraz kąta natarcia potrzebnego do lotu poziomego (przy danej prędkości) co jest spowodowanej bliskością ziemii.",
+        "correct": true
+      },
+      {
+        "text": "Znacznym skróceniu fazy wytrzymania przy lądowaniu.",
+        "correct": false
+      },
+      {
+        "text": "Osiąganiu większej mocy przez silniki tłokowe blisko ziemi (dotyczy silników bezsprężarkowych).",
+        "correct": false
+      },
+      {
+        "text": "Osiągnięcie większego ciągu silnika blisko ziemi – efekt ten zanika na wysokości równej w przybliżeniu rozpiętości samolotu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0029",
+    "question": "Aby przy rozbiegu / dobiegu samolotu wystąpiło zjawisko „hydroplanning” (dynamiczne) muszą wystąpić nastepujące czynniki:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Grubość warstwy wody na pasie musi być większa od krytycznej (około 3 mm) oraz samolot musi uzyskać odpowiednią prękość.",
+        "correct": true
+      },
+      {
+        "text": "Bieżniki koł samolotu muszą rozgrzać się do wysokiej temperatury podczas intensywnego hamowania na wilgotnym pasie.",
+        "correct": false
+      },
+      {
+        "text": "Jedna z koł samolotu musi zostać zablokowane (np. awaria anti-skid) na mokrym pasie.",
+        "correct": false
+      },
+      {
+        "text": "„Hydroplanning’” to określenie dotyczące tylko lądowania wodnosamolotu na gładkiej powierzchni wody.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0034",
+    "question": "Co to jest V<sub>X</sub>:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "To prędkość, przy której osiąga się najlepszy gradient wznoszenia. Best Angle of Climb.",
+        "correct": true
+      },
+      {
+        "text": "To prędkość, przy której osiąga się najlepszą prędkość wznoszenia Best Rate of Climb.",
+        "correct": false
+      },
+      {
+        "text": "To prędkość decyzji, przy której są bezpiecznie spełnione warunki do przerwania i kontynuowania startu.",
+        "correct": false
+      },
+      {
+        "text": "To prędkość, przy której osiąga się najlepszy stosunek siły nośnej do ciągu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0035",
+    "question": "Co to jest V<sub>Y</sub>:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "To prędkość, przy której osiąga się najlepszą prędkość wznoszenia Best Rate of Climb.",
+        "correct": true
+      },
+      {
+        "text": "To prędkość, przy której osiąga się najlepszy gradient wznoszenia. Best Angle of Climb.",
+        "correct": false
+      },
+      {
+        "text": "To prędkość decyzji, przy której są bezpiecznie spełnione warunki do przerwania i kontynuowania startu.",
+        "correct": false
+      },
+      {
+        "text": "To prędkość, przy której osiąga się najlepszy stosunek siły nośnej do ciągu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0038",
+    "question": "Czy wysoka wilgotność przyczynia się do spadku osiągów samolotu:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Tak.",
+        "correct": true
+      },
+      {
+        "text": "Fałsz – chłodzi silnik i przez to poprawia osiągi.",
+        "correct": false
+      },
+      {
+        "text": "Wilgotność powietrza nie ma wpływu na osiągi.",
+        "correct": false
+      },
+      {
+        "text": "Wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0041",
+    "question": "Dla każdej kombinacji wysokości lotu i masy samolotu, w zakresie prędkości minimalnej do maksymalnej istnieje:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Taki kąt natarcia, przy którym siła nośna równa się ciężarowi i możliwy jest lot poziomy.",
+        "correct": true
+      },
+      {
+        "text": "Takie przechylenie, które zapewnia, że siła nośna równa się ciężarowi i możliwy jest lot poziomy",
+        "correct": false
+      },
+      {
+        "text": "Taki kąt natarcia, przy którym siła oporu równa się ciągowi wytwarzanemu przez jednostki napędowe i możliwy jest lot poziomy.",
+        "correct": false
+      },
+      {
+        "text": "Taki kąt natarcia, przy którym siła nośna równa się ciężarowi razy cosinus kąta natarcia i możliwy jest lot poziomy.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0042",
+    "question": "Duża wysokość gęstościowa oznacza (w stosunku do małej wysokości gęstościowej):.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Małą gęstość powietrza i niskie osiągi samolotu.",
+        "correct": true
+      },
+      {
+        "text": "Dużą gęstość powietrza i niskie osiągi samolotu.",
+        "correct": false
+      },
+      {
+        "text": "Dużą gęstość powietrza i wysokie osiągi samolotu.",
+        "correct": false
+      },
+      {
+        "text": "Małą gęstość powietrza i wysokie osiągi samolotu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0045",
+    "question": "Jak wpłynie na długość rozbiegu samolotu (na danym lotnisku) wysoka temperatura otoczenia w porównaniu z przypadkiem, gdy temperatura otoczenia jest niska:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zwiększenie długości rozbiegu.",
+        "correct": true
+      },
+      {
+        "text": "Zmniejszenie długości rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "Temperatura otoczenia nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0046",
+    "question": "Jak wpłynie na długość rozbiegu samolotu start z lotniska położonego wysoko w górach, w stosunku do startu w takich samych warunkach temperatury, masy samolotu, wiatru i ustawiania klap z lotniska na 0 m npm:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Start z wysoko położonego lotniska - większenie długości rozbiegu.",
+        "correct": true
+      },
+      {
+        "text": "Zmniejszenie długości rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "Elewacja lotniska nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0047",
+    "question": "Jak wpłynie użycie większego wychylenia klap ( niż zwykle) na długość rozbiegu samolotu:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zmniejszenie długości rozbiegu.",
+        "correct": true
+      },
+      {
+        "text": "Zwiększenie długości rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "Nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0048",
+    "question": "Jak wpłynie zwiększenie masy samolotu na długość rozbiegu:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zwiększenie długości rozbiegu.",
+        "correct": true
+      },
+      {
+        "text": "Zmniejszenie długości rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "Nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0049",
+    "question": "Jakie będą efekty zmiany temperatury otoczenia na osiągi samolotu jeśli wszystkie inne parametry pozostaną niezmnienione:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Spadek temperatury otoczenia spowoduje wzrost gradientu wznoszenia.",
+        "correct": true
+      },
+      {
+        "text": "Wzrost temperatury otoczenia spowoduje spadek wymaganego dystansu do startu.",
+        "correct": false
+      },
+      {
+        "text": "Spadek temperatury otoczenia spowoduje wzrost wymaganego dystansu do startu.",
+        "correct": false
+      },
+      {
+        "text": "Wzrost temperatury otoczenia spowoduje spadek wymaganego dystansu do startu i lądowania.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0050",
+    "question": "Jakie będą efekty zmiany temperatury otoczenia na osiągi samolotu jeśli wszystkie inne parametry pozostaną niezmnienione:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Spadek temperatury otoczenia spowoduje zmniejszenie wymaganego dystansu do startu.",
+        "correct": true
+      },
+      {
+        "text": "Wzrost temperatury otoczenia spowoduje spadek wymaganego dystansu do startu.",
+        "correct": false
+      },
+      {
+        "text": "Spadek temperatury otoczenia spowoduje wzrost wymaganego dystansu do startu.",
+        "correct": false
+      },
+      {
+        "text": "Zmiany temperatury otoczenia nie spowodują zmiany wymaganego dystansu do startu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0055",
+    "question": "Jeśli środek ciężkości znajduje się blisko skrajnego przedniego położenia to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Nastąpi zmniejszenie prędkości wznoszenia.",
+        "correct": true
+      },
+      {
+        "text": "Ze względu na konieczność mniejszego wychylenia steru wysokości – spada wymagana siła nośna na płacie – zmniejsza się prędkość przeciągniecia.",
+        "correct": false
+      },
+      {
+        "text": "nastąpi zmniejszenie zużycia paliwa podczas lotu ze względu na mniejszy opór.",
+        "correct": false
+      },
+      {
+        "text": "nastąpi zmniejszenie oporu indukowanego.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0057",
+    "question": "Jeśli środek ciężkości znajduje się przed skrajnym przednim położeniem to samolot będzie między innymi:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Ze względu na konieczność większego wychylenia steru wysokości – wzrasta wymagana siła nośna na płacie – zwiększa się opór indukowany, co negatywnie wpływa na osiągi.",
+        "correct": true
+      },
+      {
+        "text": "Ze względu na konieczność mniejszego wychylenia steru wysokości – zmniejsza się siła nośna na usterzeniu, co wymaga zwiększenia siły nosniej na płacie co zmniejsza opór indukowany i ma negatywny wpływ na osiągi.",
+        "correct": false
+      },
+      {
+        "text": "Ze względu na konieczność mniejszego wychylenia steru wysokości – spada wymagana siła nośna na płacie – zmniejsza się prędkość przeciągniecia.",
+        "correct": false
+      },
+      {
+        "text": "Ze względu na konieczność większego wychylenia steru wysokości – spada wymagana siła nośna na płacie – zwiększa się prędkość przeciągniecia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0059",
+    "question": "Kierunek pasa 040°, wiatr 270 / 18 kt (ATIS). Jakie są składowe wiatru:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "W ogon: 12 kt, boczna – z lewej 14 kt.",
+        "correct": true
+      },
+      {
+        "text": "Czołowa: 12 kt, boczna – z prawej 14 kt.",
+        "correct": false
+      },
+      {
+        "text": "Czołowa: 16 kt, boczna – z prawej 16 kt.",
+        "correct": false
+      },
+      {
+        "text": "W ogon: 8 kt, boczna – z lewej 21 kt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0060",
+    "question": "Kierunek pasa 150°, wiatr 220 / 22 kt (ATIS). Jakie są składowe wiatru:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Czołowa: 8 kt, boczna – z prawej 21 kt.",
+        "correct": true
+      },
+      {
+        "text": "Czołowa: 14 kt, boczna – z prawej 17 kt.",
+        "correct": false
+      },
+      {
+        "text": "Czołowa: 4 kt, boczna – z prawej 22 kt.",
+        "correct": false
+      },
+      {
+        "text": "W ogon: 8 kt, boczna – z lewej 21 kt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0061",
+    "question": "Kierunek pasa 200°, wiatr 080 / 13 kt (ATIS). Jakie są składowe wiatru:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "W ogon: 7 kt, boczna – z lewej 11 kt.",
+        "correct": true
+      },
+      {
+        "text": "Czołowa: 7 kt, boczna – z prawej 11 kt.",
+        "correct": false
+      },
+      {
+        "text": "Czołowa: 4 kt, boczna – z prawej 12 kt.",
+        "correct": false
+      },
+      {
+        "text": "W ogon: 8 kt, boczna – z lewej 12 kt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0062",
+    "question": "Kierunek pasa 220°, wiatr 160 / 26 kt (ATIS). Jakie są składowe wiatru:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Czołowa: 13 kt, boczna – z lewej 23 kt.",
+        "correct": true
+      },
+      {
+        "text": "Czołowa: 14 kt, boczna – z prawej 17 kt.",
+        "correct": false
+      },
+      {
+        "text": "Czołowa: 9 kt, boczna – z prawej 23 kt.",
+        "correct": false
+      },
+      {
+        "text": "W ogon: 13 kt, boczna – z lewej 22 kt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0063",
+    "question": "Kierunek pasa 330°, wiatr 250 / 15 kt (ATIS). Jakie są składowe wiatru:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Czołowa: 3 kt, boczna – z lewej 15 kt.",
+        "correct": true
+      },
+      {
+        "text": "Czołowa: 8 kt, boczna – z lewej 13 kt.",
+        "correct": false
+      },
+      {
+        "text": "W ogon: 3 kt, boczna – z lewej 15 kt.",
+        "correct": false
+      },
+      {
+        "text": "W ogon: 3 kt, boczna – z prawej 15 kt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0064",
+    "question": "Które, z podanych kombinacji warunków pogodowych panujących na lotnisku podczas startu, przyczynią się największego spadku osiągów samolotu:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "duża temperatura, duża wysokość gęstościowa, duża wilgotność.",
+        "correct": true
+      },
+      {
+        "text": "mała temperatura, duża wysokość gestościowa, mała wilgotność.",
+        "correct": false
+      },
+      {
+        "text": "duża temperatura, mała wysokość gestościowa, małą wilgotność.",
+        "correct": false
+      },
+      {
+        "text": "mała temperatura, małą wysokość gestościowa, mała wilgotność.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0065",
+    "question": "Które, z podanych kombinacji warunków pogodowych panujących na lotnisku podczas startu, przyczynią się największego spadku osiągów samolotu:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "duża wysokość gęstościowa i duża temperatura otoczenia.",
+        "correct": true
+      },
+      {
+        "text": "silny wiatr czołowy.",
+        "correct": false
+      },
+      {
+        "text": "słaby opad deszczu przy niskiej, ale dodatniej temperaturze otoczenia.",
+        "correct": false
+      },
+      {
+        "text": "niska temperatura otoczenia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0066",
+    "question": "Liczba Macha to stosunek:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Prędkości TAS i lokalnej prędkości dźwięku.",
+        "correct": true
+      },
+      {
+        "text": "Prędkości IAS i lokalnej prędkości dźwięku.",
+        "correct": false
+      },
+      {
+        "text": "Prędkości IAS i prędkości dźwięku na danej wysokości odniesionej do ISA.",
+        "correct": false
+      },
+      {
+        "text": "Prędkości TAS i prędkości dźwięku na poziomie morza.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0068",
+    "question": "Maksymalna konstrukcyjna masa do lądowania (Maximum Structural Landing Mass) to:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "maksymalna masa do lądowania w normalnych okolicznościach.",
+        "correct": true
+      },
+      {
+        "text": "maksymalna masa do lądowania - nieprzekraczalna - nawet w sytuacjach awaryjnych ze względu na pewność zniszczenia konstrukcji.",
+        "correct": false
+      },
+      {
+        "text": "maksymalna masa do lądowania w sytuacjach awaryjnych (1.3 razy większa od normalnej masy do lądowania).",
+        "correct": false
+      },
+      {
+        "text": "maksymalna masa do startu i do lądowania w sytuacjach awaryjnych (1.3 razy większa od normalnej masy do lądowania).",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0072",
+    "question": "Mała wysokość gęstościowa oznacza, że:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Gęstość powietrza jest duża – czyli osiągi samolotu będą lepsze niż w przypadku dużej wysokości gestościowej.",
+        "correct": true
+      },
+      {
+        "text": "Gęstość powietrza jest duża – czyli osiągi samolotu będą dużo gorsze niż w przypadku dużej wysokości gestościowej.",
+        "correct": false
+      },
+      {
+        "text": "Gęstość powietrza jest mała, co powoduje spadek osiągów samolotu w porównaniu do przypadku dużej wysokości gestościowej.",
+        "correct": false
+      },
+      {
+        "text": "Gęstość powietrza jest duża, co powoduje spadek osiągów samolotu w porównaniu do przypadku dużej wysokości gestościowej.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0078",
+    "question": "Najbardziej ekonomiczny z punktu widzenia zużycia paliwa / zasięgu kąt natarcia to taki, który wytwarza:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Najlepszy stosunek sił nośnej do oporu – taki najbardziej ekonomiczny kąt natarcia jest stały dla każdej kombinacji wysokości lotu i masy samolotu.",
+        "correct": true
+      },
+      {
+        "text": "Najlepszy stosunek sił nośnej do oporu – taki najbardziej ekonomiczny kąt natarcia rośnie wraz z masą samolotu oraz wysokością lotu.",
+        "correct": false
+      },
+      {
+        "text": "Najlepszy stosunek siły oporu do ciągu.",
+        "correct": false
+      },
+      {
+        "text": "Najlepszy stosunek siły nośnej do ciągu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0079",
+    "question": "Odnośnie efektu „wpływu ziemi” prawdą jest, że:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zjawisko zanika na wysokości równej w przybliżeniu rozpiętości samolotu / szybowca i osiągi spadają.",
+        "correct": true
+      },
+      {
+        "text": "Zjawisko znaczne skraca fazę wytrzymania przy lądowaniu.",
+        "correct": false
+      },
+      {
+        "text": "Poprawia się gradient wznoszenia do wysokości 150 m.",
+        "correct": false
+      },
+      {
+        "text": "Wzrast istotnie prędkość przeciągniecia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0080",
+    "question": "Odnośnie wpływu oblodzenia na osiągi statków powietrznych prawdą jest, że:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Nawet drobne zanieczyszczenie typu „papier ścierny” powierzchni nośnych może mieć niebezpieczny wpływ na osiągi.",
+        "correct": true
+      },
+      {
+        "text": "Lód na górnej powierzchni skrzydeł /łopat wirników jest mniej niebezpieczny niż na dolnej.",
+        "correct": false
+      },
+      {
+        "text": "Głównym czynnikiem wpływającym na osiągi statków powietrznych jest masa osadzającego się na nich lodu.",
+        "correct": false
+      },
+      {
+        "text": "Aby na statku powietrznym pojawiło się oblodzenie mające wpływ na osiągi musi on poruszać się w chmurach.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0085",
+    "question": "Podczas wykonywania prawidłowego zakrętu z przechyleniem 60 stopni:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Prękość przeciągnięcia wzrosnie o około 40%.",
+        "correct": true
+      },
+      {
+        "text": "Prękość przeciągnięcia spadnie o około 20%.",
+        "correct": false
+      },
+      {
+        "text": "Prękość przeciągnięcia wzrośnie o około 60%.",
+        "correct": false
+      },
+      {
+        "text": "Prędkość przeciągnięcia nie zmienia się w zakręcie.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0086",
+    "question": "Podczas zakrętu:.",
+    "url": "https://blog.awiacja.edu.pl/tag/PL030-0086",
+    "answers": [
+      {
+        "text": "Pojawia się siła dośrodkowa  i przeciązenie (load factor).",
+        "correct": true
+      },
+      {
+        "text": "Siła ciężkości jest dokładnie równoważona przez siłę nośną.",
+        "correct": false
+      },
+      {
+        "text": "Pojawia się przyspieszenie ujemne.",
+        "correct": false
+      },
+      {
+        "text": "Spada prękość przeciągniecia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0087",
+    "question": "Przeciążenie wystepujące w zakręcie (load factor) to:.",
+    "url": "https://blog.awiacja.edu.pl/tag/PL030-0087",
+    "answers": [
+      {
+        "text": "Całkowita siła nośna dzielona przez ciężar.",
+        "correct": true
+      },
+      {
+        "text": "Ciężar dzielony przez siłę nośną.",
+        "correct": false
+      },
+      {
+        "text": "Ciąg dzielony przez ciężar.",
+        "correct": false
+      },
+      {
+        "text": "Ciężar dzielony przez ciąg.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0088",
+    "question": "Przy starcie z pasa nachylonego - pod górę – przyspieszenie podczas rozbiegu samolotu będzie ... ,a długość rozbiegu ... :.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Mniejsze, wzrośnie.",
+        "correct": true
+      },
+      {
+        "text": "Mniejsze, zmniejszy się.",
+        "correct": false
+      },
+      {
+        "text": "Nie ma różnicy, nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "Większe, zmniejszy się.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0089",
+    "question": "Przy starcie z pasa o nachyleniu dodatnim – z góry długość rozbiegu samolotu:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zmniejszy się.",
+        "correct": true
+      },
+      {
+        "text": "Zwiększy się.",
+        "correct": false
+      },
+      {
+        "text": "Nachylenie drogi startowej nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0090",
+    "question": "Pułap praktyczny to wysokość ciśnieniowa, na której:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "prędkość wznoszenia statku powietrznego osiąga pewną, określoną przepisami, wartość.",
+        "correct": true
+      },
+      {
+        "text": "prędkość wznoszenia statku powietrznego osiąga zero.",
+        "correct": false
+      },
+      {
+        "text": "prędkość przeciągniecia i krytyczna prędkość Macha statku powietrznego są równe.",
+        "correct": false
+      },
+      {
+        "text": "prędkość statku powietrznego nie pozwala na żadne poziome manewry.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0091",
+    "question": "Rozbieg z pasa o jakiej nawierzchni będzie najdłuższy:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Wysoka trawa.",
+        "correct": true
+      },
+      {
+        "text": "Niska trawa.",
+        "correct": false
+      },
+      {
+        "text": "Beton.",
+        "correct": false
+      },
+      {
+        "text": "Asfalt.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0094",
+    "question": "Samolot musi być wyważony ze względu na zachowanie stateczności:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "podłużnej.",
+        "correct": true
+      },
+      {
+        "text": "poprzecznej.",
+        "correct": false
+      },
+      {
+        "text": "stayczynej poprzecznej.",
+        "correct": false
+      },
+      {
+        "text": "dynamicznej poprzecznej i podłużnej.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0095",
+    "question": "Samolot musi być wyważony ze względu na:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Zachowanie stateczności podłużnej.",
+        "correct": true
+      },
+      {
+        "text": "Zachowanie stateczności poprzecznej.",
+        "correct": false
+      },
+      {
+        "text": "Konieczność zachowania równomiernego obciążenia goleni podwozia.",
+        "correct": false
+      },
+      {
+        "text": "Zabezpieczenia przed przekroczeniem krytycznego kąta natarcia we wszystkich stanach lotu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0096",
+    "question": "Skutki przeciążenia to między innymi:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Podwyższenie prędkości startu i prędkości bezpiecznych, wydłużenie dystansu do startu i lądowania, zmniejszenie prędkości wznoszenia, możliwość uszkodzeń konstrukcji samolotu.",
+        "correct": true
+      },
+      {
+        "text": "Obniżenie prędkości startu i prędkości bezpiecznych, nie ma zmian w osiągach silników.",
+        "correct": false
+      },
+      {
+        "text": "Obniżenie prędkości startu i prędkości bezpiecznych oraz możliwość uszkodzeń konstrukcji samolotu.",
+        "correct": false
+      },
+      {
+        "text": "Podwyższenie prędkości startu oraz zwiększenie zasięgu i długotrwałości lotu.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0104",
+    "question": "Użycie (wysunięcie) klap zmniejsza:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Współczynnik sił nośnej do oporu.",
+        "correct": true
+      },
+      {
+        "text": "Opór indukowany.",
+        "correct": false
+      },
+      {
+        "text": "Pole widzenia pilota ze względu na zwiększony kąt natarcia.",
+        "correct": false
+      },
+      {
+        "text": "Ciąg potrzebny do lotu poziomego.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0107",
+    "question": "W danym samolocie mamy dwa położenia klap: 0 i 10 stopni. Aby uzyskać krótszą długość rozbiegu użyjemy klap:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "10.",
+        "correct": true
+      },
+      {
+        "text": "0.",
+        "correct": false
+      },
+      {
+        "text": "Położenie klap nie ma wpływu na długość rozbiegu.",
+        "correct": false
+      },
+      {
+        "text": "wszystkie podane odpowiedzi są nieprawdziwe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0110",
+    "question": "W standardowym układzie (klasycznym) środek ciężkości samolotu jest (licząc od przodu):.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Przed środkiem aerodynamicznym.",
+        "correct": true
+      },
+      {
+        "text": "Dokładnie w środku aerodynamicznym.",
+        "correct": false
+      },
+      {
+        "text": "Zawsze dokładnie pod środkiem aerodynamicznym.",
+        "correct": false
+      },
+      {
+        "text": "Za środkiem aerodynamicznym.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0111",
+    "question": "Ważenie samolotu: przednie kółko 1000kg, lewe i prawe koła główne po 5000kg. Odległość między kółkiem przednim i głównymi wynosi 10 m. Ile przed kołami głównego podwozia znajduje się środek masy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "0.91 m",
+        "correct": true
+      },
+      {
+        "text": "0.75 m",
+        "correct": false
+      },
+      {
+        "text": "9.1 m",
+        "correct": false
+      },
+      {
+        "text": "0.81 m",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL030-0120",
+    "question": "Zjawisko polegajce na oblodzeniu statecznika poziomego:.",
+    "url": null,
+    "answers": [
+      {
+        "text": "Może doprowadzić do przeciągniecia statecznika poziomego i wejście samolotu w niekontrolowane nurkowanie.",
+        "correct": true
+      },
+      {
+        "text": "Gdy zaistnieje, wymaga takiego samego działania ze strony pilota – oddania steru od siebie, dodania mocy.",
+        "correct": false
+      },
+      {
+        "text": "Występuje tylko na dużych samolotach pasażerskich.",
+        "correct": false
+      },
+      {
+        "text": "Jest najbardziej niebezpieczne przy dużych prędkościach lotu, kiedy skuteczność sterowania pochyleniem jest największa.",
+        "correct": false
+      }
+    ]
+  }
+]

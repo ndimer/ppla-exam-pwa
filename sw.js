@@ -1,4 +1,4 @@
-const CACHE = 'ppla-v8';
+const CACHE = 'ppla-v10';
 const PRECACHE = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const PRECACHE = [
   './icon-180.png',
   './icon-512.png',
   './data/questions-prawo.json',
+  './data/questions-osiagi.json',
 ];
 
 self.addEventListener('install', e => {

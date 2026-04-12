@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PPL-A Prawo Lotnicze</title>
+  <title>PPL-A Quiz</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon.svg">
   <link rel="apple-touch-icon" href="icon-180.png">
@@ -208,6 +208,59 @@
     }
     .nav-btn:hover:not(:disabled) { background: #f8fafc; border-color: #94a3b8; }
     .nav-btn:disabled { opacity: .38; cursor: default; }
+
+    /* ── Subject selection cards ────────────────────────── */
+    .subject-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #fff;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 20px 22px;
+      cursor: pointer;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
+      text-align: left;
+      width: 100%;
+    }
+    .subject-card:hover {
+      border-color: #2563eb;
+      box-shadow: 0 4px 16px rgba(37,99,235,.12);
+      transform: translateY(-1px);
+    }
+    .subject-card:active { transform: translateY(0); }
+    .subject-icon {
+      font-size: 36px;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 48px;
+      text-align: center;
+    }
+    .subject-info { flex: 1; min-width: 0; }
+    .subject-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+    .subject-meta {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 3px;
+    }
+    .subject-progress-bar {
+      height: 4px;
+      background: #e5e7eb;
+      border-radius: 2px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .subject-progress-fill {
+      height: 100%;
+      background: #2563eb;
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
   </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -216,14 +269,22 @@
   <header class="bg-white shadow-sm sticky top-0 z-30">
     <div class="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
+        <button id="back-btn"
+          class="hidden p-2 -ml-2 rounded-lg hover:bg-gray-100 text-gray-600 transition-colors"
+          aria-label="Wróć do wyboru działu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <polyline points="13,4 7,10 13,16"/>
+          </svg>
+        </button>
         <span class="text-2xl select-none">✈️</span>
         <div>
-          <h1 class="font-bold text-gray-900 text-base leading-tight">PPL-A Prawo Lotnicze</h1>
-          <p class="text-xs text-gray-500" id="progress-text">Ładowanie…</p>
+          <h1 id="header-title" class="font-bold text-gray-900 text-base leading-tight">PPL-A Quiz</h1>
+          <p class="text-xs text-gray-500" id="progress-text">Wybierz dział</p>
         </div>
       </div>
       <button id="hamburger-btn"
-        class="p-2 rounded-lg hover:bg-gray-100 text-gray-600 transition-colors"
+        class="hidden p-2 rounded-lg hover:bg-gray-100 text-gray-600 transition-colors"
         aria-label="Menu">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
              stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -241,39 +302,49 @@
     </div>
   </header>
 
-  <!-- ── Main content ───────────────────────────────────── -->
-  <main class="max-w-3xl mx-auto px-4 py-6">
-
-    <!-- Pagination top -->
-    <div class="flex items-center justify-between mb-6">
-      <button id="prev-top" class="nav-btn" disabled>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="10,3 5,8 10,13"/></svg>
-        Poprzednia
-      </button>
-      <span id="page-info-top" class="text-sm text-gray-500 font-medium"></span>
-      <button id="next-top" class="nav-btn">
-        Następna
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
-      </button>
+  <!-- ── Subject selection screen ───────────────────────── -->
+  <div id="subject-screen" class="max-w-3xl mx-auto px-4 py-10">
+    <div class="text-center mb-8">
+      <p class="text-gray-500 text-base">Wybierz dział do nauki</p>
     </div>
+    <div id="subject-list" class="flex flex-col gap-4"></div>
+  </div>
 
-    <!-- Questions -->
-    <div id="questions"></div>
+  <!-- ── Quiz screen (hidden until subject selected) ────── -->
+  <div id="quiz-screen" class="hidden">
+    <main class="max-w-3xl mx-auto px-4 py-6">
 
-    <!-- Pagination bottom -->
-    <div class="flex items-center justify-between mt-2">
-      <button id="prev-bot" class="nav-btn" disabled>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="10,3 5,8 10,13"/></svg>
-        Poprzednia
-      </button>
-      <span id="page-info-bot" class="text-sm text-gray-500 font-medium"></span>
-      <button id="next-bot" class="nav-btn">
-        Następna
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
-      </button>
-    </div>
+      <!-- Pagination top -->
+      <div class="flex items-center justify-between mb-6">
+        <button id="prev-top" class="nav-btn" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="10,3 5,8 10,13"/></svg>
+          Poprzednia
+        </button>
+        <span id="page-info-top" class="text-sm text-gray-500 font-medium"></span>
+        <button id="next-top" class="nav-btn">
+          Następna
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
+        </button>
+      </div>
 
-  </main>
+      <!-- Questions -->
+      <div id="questions"></div>
+
+      <!-- Pagination bottom -->
+      <div class="flex items-center justify-between mt-2">
+        <button id="prev-bot" class="nav-btn" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="10,3 5,8 10,13"/></svg>
+          Poprzednia
+        </button>
+        <span id="page-info-bot" class="text-sm text-gray-500 font-medium"></span>
+        <button id="next-bot" class="nav-btn">
+          Następna
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
+        </button>
+      </div>
+
+    </main>
+  </div>
 
   <!-- ── Overlay ────────────────────────────────────────── -->
   <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-40 z-40"></div>
@@ -319,6 +390,18 @@
     </div>
 
     <hr class="border-gray-100 mb-6">
+
+    <!-- Change subject -->
+    <button id="change-subject-btn"
+      class="w-full flex items-center justify-center gap-2 bg-slate-100
+             hover:bg-slate-200 text-slate-700 py-3 rounded-xl font-semibold
+             transition-colors text-sm mb-3">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <polyline points="10,3 5,8 10,13"/>
+      </svg>
+      Zmień dział
+    </button>
 
     <!-- Reset -->
     <button id="reset-btn"

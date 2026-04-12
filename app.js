@@ -1,7 +1,77 @@
-const PAGE_SIZE = 10;
-const STORAGE_KEY = 'ppla-quiz-state';
-const FAV_KEY    = 'ppla-quiz-favorites';
+// ── Subjects config ──────────────────────────────────────────────────────────
 
+const SUBJECTS = [
+  {
+    id: 'prawo',
+    name: 'Prawo Lotnicze',
+    file: 'data/questions-prawo.json',
+    icon: '⚖️',
+    description: 'Przepisy lotnicze, ICAO, prawo krajowe',
+  },
+  {
+    id: 'osiagi',
+    name: 'Osiągi i planowanie lotu',
+    file: 'data/questions-osiagi.json',
+    icon: '📊',
+    description: 'Osiągi samolotu, masa i wyważenie, planowanie lotu',
+  },
+];
+
+// ── Storage key helpers ──────────────────────────────────────────────────────
+
+// Legacy keys used before multi-subject support — used only for migration.
+const LEGACY_STATE_KEY = 'ppla-quiz-state';
+const LEGACY_FAV_KEY   = 'ppla-quiz-favorites';
+
+function stateKey(subjectId) { return `ppla-quiz-state-${subjectId}`; }
+function favKey(subjectId)   { return `ppla-quiz-favorites-${subjectId}`; }
+
+// ── Session persistence ──────────────────────────────────────────────────────
+// Remembers which subject + view the user was in so the app reopens there.
+
+const SESSION_KEY = 'ppla-session';
+
+function saveSession() {
+  if (!currentSubjectId) return;
+  localStorage.setItem(SESSION_KEY, JSON.stringify({ subjectId: currentSubjectId, view: currentView }));
+}
+
+function clearSession() {
+  localStorage.removeItem(SESSION_KEY);
+}
+
+function loadSession() {
+  try {
+    const s = localStorage.getItem(SESSION_KEY);
+    return s ? JSON.parse(s) : null;
+  } catch { return null; }
+}
+
+// ── Migration ────────────────────────────────────────────────────────────────
+// Existing users have data under the legacy flat keys.
+// Copy it into subject-namespaced keys for "prawo" (the only subject that existed)
+// then remove the legacy keys so this runs only once.
+
+function migrateOldData() {
+  const legacyState = localStorage.getItem(LEGACY_STATE_KEY);
+  const legacyFav   = localStorage.getItem(LEGACY_FAV_KEY);
+  if (!legacyState && !legacyFav) return; // nothing to migrate
+
+  if (legacyState && !localStorage.getItem(stateKey('prawo'))) {
+    localStorage.setItem(stateKey('prawo'), legacyState);
+  }
+  if (legacyFav && !localStorage.getItem(favKey('prawo'))) {
+    localStorage.setItem(favKey('prawo'), legacyFav);
+  }
+  localStorage.removeItem(LEGACY_STATE_KEY);
+  localStorage.removeItem(LEGACY_FAV_KEY);
+}
+
+// ── App state ────────────────────────────────────────────────────────────────
+
+const PAGE_SIZE = 10;
+
+let currentSubjectId = null;  // set once the user picks a subject
 let questions  = [];
 let state      = { page: 0, answers: {}, shuffles: {} };
 let favState   = { ids: [], answers: {}, page: 0 };
@@ -9,74 +79,178 @@ let currentView = 'all'; // 'all' | 'fav'
 
 const $ = id => document.getElementById(id);
 
+// ── Init ─────────────────────────────────────────────────────────────────────
+
 async function init() {
+  migrateOldData();
+  const session = loadSession();
+  if (session?.subjectId) {
+    await selectSubject(session.subjectId, session.view ?? 'all');
+  } else {
+    renderSubjectScreen();
+  }
+  registerSW();
+}
+
+// ── Subject selection screen ──────────────────────────────────────────────────
+
+function renderSubjectScreen() {
+  $('subject-screen').classList.remove('hidden');
+  $('quiz-screen').classList.add('hidden');
+  $('back-btn').classList.add('hidden');
+  $('hamburger-btn').classList.add('hidden');
+  $('header-title').textContent = 'PPL-A Quiz';
+  $('progress-text').textContent = 'Wybierz dział';
+  $('progress-bar').style.width = '0%';
+
+  const list = $('subject-list');
+  list.innerHTML = SUBJECTS.map(s => {
+    const savedState = loadRawState(s.id);
+    const savedFav   = loadRawFav(s.id);
+    const answeredCount = savedState ? Object.keys(savedState.answers || {}).length : 0;
+    const favCount      = savedFav   ? (savedFav.ids || []).length : 0;
+
+    const metaParts = [];
+    if (answeredCount > 0) metaParts.push(`${answeredCount} odpowiedzi`);
+    if (favCount > 0)      metaParts.push(`${favCount} ulubionych`);
+    const meta = metaParts.length > 0 ? metaParts.join(' · ') : s.description;
+
+    return `
+      <button class="subject-card" data-subject-id="${s.id}">
+        <span class="subject-icon">${s.icon}</span>
+        <div class="subject-info">
+          <div class="subject-name">${esc(s.name)}</div>
+          <div class="subject-meta">${esc(meta)}</div>
+        </div>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+             stroke="#94a3b8" stroke-width="2" stroke-linecap="round" style="flex-shrink:0">
+          <polyline points="6,3 12,9 6,15"/>
+        </svg>
+      </button>`;
+  }).join('');
+
+  list.querySelectorAll('[data-subject-id]').forEach(btn => {
+    btn.addEventListener('click', () => selectSubject(btn.dataset.subjectId));
+  });
+}
+
+function loadRawState(subjectId) {
+  try {
+    const s = localStorage.getItem(stateKey(subjectId));
+    return s ? JSON.parse(s) : null;
+  } catch { return null; }
+}
+
+function loadRawFav(subjectId) {
+  try {
+    const s = localStorage.getItem(favKey(subjectId));
+    return s ? JSON.parse(s) : null;
+  } catch { return null; }
+}
+
+async function selectSubject(subjectId, initialView = 'all') {
+  const subject = SUBJECTS.find(s => s.id === subjectId);
+  if (!subject) return;
+
+  currentSubjectId = subjectId;
+  currentView = initialView;
+
+  // Reset runtime state then load from storage
+  state    = { page: 0, answers: {}, shuffles: {} };
+  favState = { ids: [], answers: {}, page: 0 };
   loadState();
   loadFavState();
 
+  // Show quiz screen early so the user sees feedback
+  showQuizScreen(subject);
+
+  // Load questions
   try {
-    const res = await fetch('./data/questions-prawo.json');
+    const res = await fetch('./' + subject.file);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     questions = await res.json();
   } catch {
     $('questions').innerHTML =
-      '<p style="color:#b91c1c;padding:32px">Nie można załadować pytań.<br>' +
-      'Uruchom najpierw: <code>node generate-json.js</code> w katalogu nadrzędnym.</p>';
+      '<p style="color:#b91c1c;padding:32px">Nie można załadować pytań.</p>';
     return;
   }
 
-  // clamp page in case questions count changed
+  // Clamp page in case question count changed
   const maxPage = Math.max(0, Math.ceil(questions.length / PAGE_SIZE) - 1);
   if (state.page > maxPage) state.page = maxPage;
 
-  // generate shuffles on first load (no stored shuffles yet)
+  // Generate shuffles on first load for this subject
   if (!state.shuffles || Object.keys(state.shuffles).length === 0) {
     state.shuffles = generateShuffles();
     saveState();
   }
 
+  saveSession();
   setupEvents();
   render();
 
-  // Restore scroll position after reload (e.g. PWA waking from inactivity)
   const savedScroll = currentView === 'fav'
     ? (favState.scrollY ?? 0)
     : (state.scrollY ?? 0);
   if (savedScroll > 0) {
-    // Double rAF ensures the browser has painted the content before scrolling,
-    // otherwise scrollTo may be clamped if page height isn't established yet.
     requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, savedScroll)));
   }
+}
 
-  registerSW();
+function showQuizScreen(subject) {
+  $('subject-screen').classList.add('hidden');
+  $('quiz-screen').classList.remove('hidden');
+  $('back-btn').classList.remove('hidden');
+  $('hamburger-btn').classList.remove('hidden');
+  $('header-title').textContent = subject.name;
+  $('progress-text').textContent = 'Ładowanie…';
+}
+
+function goBackToSubjects() {
+  clearSession();
+  currentSubjectId = null;
+  questions = [];
+  renderSubjectScreen();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ── State ────────────────────────────────────────────────────────────────────
 
 function loadState() {
   try {
-    const s = localStorage.getItem(STORAGE_KEY);
+    const s = localStorage.getItem(stateKey(currentSubjectId));
     if (s) state = JSON.parse(s);
   } catch {}
 }
 
 function saveState() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  localStorage.setItem(stateKey(currentSubjectId), JSON.stringify(state));
 }
 
 function loadFavState() {
   try {
-    const s = localStorage.getItem(FAV_KEY);
+    const s = localStorage.getItem(favKey(currentSubjectId));
     if (s) favState = JSON.parse(s);
   } catch {}
 }
 
 function saveFavState() {
-  localStorage.setItem(FAV_KEY, JSON.stringify(favState));
+  localStorage.setItem(favKey(currentSubjectId), JSON.stringify(favState));
 }
 
 // ── Events ───────────────────────────────────────────────────────────────────
 
+// Track whether events have already been bound to avoid double-binding on
+// subject switches (since setupEvents is called each time a subject is selected).
+let eventsSetUp = false;
+
 function setupEvents() {
+  if (eventsSetUp) return;
+  eventsSetUp = true;
+
+  // Back button
+  $('back-btn').addEventListener('click', () => goBackToSubjects());
+
   // Pagination
   ['prev-top', 'prev-bot'].forEach(id =>
     $(id).addEventListener('click', () => changePage(currentPage() - 1))
@@ -102,6 +276,12 @@ function setupEvents() {
   // View selector
   $('view-all-btn').addEventListener('click', () => switchView('all'));
   $('view-fav-btn').addEventListener('click', () => switchView('fav'));
+
+  // Change subject from drawer
+  $('change-subject-btn').addEventListener('click', () => {
+    closeDrawer();
+    goBackToSubjects();
+  });
 
   // Reset all answers (favourites list is preserved)
   $('reset-btn').addEventListener('click', () => {
@@ -133,6 +313,7 @@ function setupEvents() {
 
   // Persist scroll position so it can be restored after PWA reload
   function saveScrollNow() {
+    if (!currentSubjectId) return;
     const y = window.scrollY;
     if (currentView === 'fav') {
       favState.scrollY = y;
@@ -149,8 +330,6 @@ function setupEvents() {
     scrollSaveTimer = setTimeout(saveScrollNow, 200);
   }, { passive: true });
 
-  // Save immediately when the page is hidden (tab close, PWA backgrounded, etc.)
-  // These events are synchronous so localStorage writes complete before unload.
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'hidden') saveScrollNow();
   });
@@ -163,8 +342,7 @@ function currentPage() {
 
 function switchView(view) {
   currentView = view;
-  // Clear stored scroll for the view being entered so a reload after this
-  // switch correctly restores to the top rather than a stale position.
+  saveSession();
   if (view === 'fav') {
     favState.scrollY = 0;
     saveFavState();
@@ -212,7 +390,6 @@ function toggleFavorite(qIndex) {
   if (pos >= 0) {
     favState.ids.splice(pos, 1);
     delete favState.answers[qId];
-    // clamp favourites page after removal
     const maxFavPage = Math.max(0, Math.ceil(favState.ids.length / PAGE_SIZE) - 1);
     if (favState.page > maxFavPage) favState.page = maxFavPage;
   } else {
@@ -221,10 +398,8 @@ function toggleFavorite(qIndex) {
   saveFavState();
 
   if (currentView === 'fav') {
-    // List changed — full re-render
     render();
   } else {
-    // Partial update: just flip the star on the card
     const card = document.querySelector(`[data-question="${qIndex}"]`);
     if (card) {
       const btn = card.querySelector('[data-fav-toggle]');
@@ -248,7 +423,6 @@ function selectAnswer(qIndex, aIndex) {
     saveState();
   }
 
-  // Update only the affected card's buttons (no full re-render)
   const card = document.querySelector(`[data-question="${qIndex}"]`);
   if (!card) return;
   const shuffleOrder = state.shuffles[qIndex] ?? q.answers.map((_, i) => i);
@@ -311,7 +485,6 @@ function renderProgress() {
   }
 }
 
-// Returns [{q, qIndex}] for all currently valid favourite questions
 function favQuestions() {
   return favState.ids
     .map(id => {
@@ -416,7 +589,9 @@ function renderPagination() {
 // ── Drawer ───────────────────────────────────────────────────────────────────
 
 function openDrawer() {
-  renderProgress(); // refresh stats
+  renderProgress();
+  $('view-all-btn').classList.toggle('active', currentView === 'all');
+  $('view-fav-btn').classList.toggle('active', currentView === 'fav');
   $('drawer').classList.add('open');
   $('overlay').classList.remove('hidden');
 }
