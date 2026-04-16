@@ -15,6 +15,13 @@ const SUBJECTS = [
     icon: '📊',
     description: 'Osiągi samolotu, masa i wyważenie, planowanie lotu',
   },
+  {
+    id: 'nawigacja',
+    name: 'Nawigacja',
+    file: 'data/questions-nawigacja.json',
+    icon: '🧭',
+    description: 'Nawigacja lotnicza, mapy, przeliczenia, procedury',
+  },
 ];
 
 // ── Storage key helpers ──────────────────────────────────────────────────────

@@ -1,0 +1,4395 @@
+[
+  {
+    "id": "PL060-0001",
+    "question": "762 metry to po przeliczeniu:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0001",
+    "answers": [
+      {
+        "text": "2 500 ft",
+        "correct": true
+      },
+      {
+        "text": "25000 ft",
+        "correct": false
+      },
+      {
+        "text": "2 400 ft",
+        "correct": false
+      },
+      {
+        "text": "232.3 ft",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0002",
+    "question": "Ciśnienie panujące na progu drogi startowej w użyciu oznaczamy jako:",
+    "url": null,
+    "answers": [
+      {
+        "text": "QFE",
+        "correct": true
+      },
+      {
+        "text": "QNE",
+        "correct": false
+      },
+      {
+        "text": "QNH",
+        "correct": false
+      },
+      {
+        "text": "STD",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0003",
+    "question": "Deklinacja to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kąt zawarty między południkiem geograficznym a południkiem magnetycznym",
+        "correct": true
+      },
+      {
+        "text": "kąt zawarty między kierunkiem wektora magnetycznego Ziemi a płaszczyzną styczną do jej powierzchni",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między południkiem magnetycznym a południkiem busoli, mierzony zgodnie z połówkowym systemem pomiaru kierunku",
+        "correct": false
+      },
+      {
+        "text": "linia łącząca punkty o jednakowej wartości inklinacji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0004",
+    "question": "Dewiacja busoli to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kąt zawarty między południkiem magnetycznym a południkiem busoli, mierzony zgodnie z połówkowym systemem pomiaru kierunku",
+        "correct": true
+      },
+      {
+        "text": "kąt zawarty między południkiem geograficznym a południkiem magnetycznym",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między kierunkiem wektora magnetycznego Ziemi a płaszczyzną styczną do jej powierzchni",
+        "correct": false
+      },
+      {
+        "text": "linia łącząca punkty o jednakowej wartości deklinacji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0005",
+    "question": "Długość geograficzna to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kąt dwuścienny, zawarty między płaszczyzną południka zerowego a płaszczyzną południka przechodzącego przez dany punkt na powierzchni Ziemi",
+        "correct": true
+      },
+      {
+        "text": "łuk łączący oba bieguny geograficzne Ziemi, będący przecięciem powierzchni Ziemi płaszczyzną przechodzącą przez oś obrotu Ziemi",
+        "correct": false
+      },
+      {
+        "text": "łuk powstały w wyniku przecięcia powierzchni Ziemi płaszczyzną prostopadłą do osi Ziemi przechodzącą przez jej środek",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między płaszczyzną równika a pionem (promieniem) danego punktu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0006",
+    "question": "Do określenia trójwymiarowej pozycji obiektu według GPS potrzeba:",
+    "url": null,
+    "answers": [
+      {
+        "text": "odbioru sygnału czterech satelitów,",
+        "correct": true
+      },
+      {
+        "text": "odbioru sygnału dwóch satelitów,",
+        "correct": false
+      },
+      {
+        "text": "dwóch odbiorników,",
+        "correct": false
+      },
+      {
+        "text": "trzech odbiorników.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0007",
+    "question": "Funkcjonowanie którego urządzenia opiera się na oddziaływaniu pola magnetycznego Ziemi?",
+    "url": null,
+    "answers": [
+      {
+        "text": "Busola magnetyczna",
+        "correct": true
+      },
+      {
+        "text": "Chyłomierz poprzeczny",
+        "correct": false
+      },
+      {
+        "text": "VOR/ILS",
+        "correct": false
+      },
+      {
+        "text": "Wariometr",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0008",
+    "question": "Godzina 0100 czasu lokalnego latem w Polsce odpowiada godzinie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0008",
+    "answers": [
+      {
+        "text": "2300 UTC dnia poprzedniego",
+        "correct": true
+      },
+      {
+        "text": "2400 UTC dnia poprzedniego",
+        "correct": false
+      },
+      {
+        "text": "0100 UTC",
+        "correct": false
+      },
+      {
+        "text": "1100 UTC",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0009",
+    "question": "Godzina 0300 czasu lokalnego latem w Polsce odpowiada godzinie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0009",
+    "answers": [
+      {
+        "text": "0100 UTC",
+        "correct": true
+      },
+      {
+        "text": "0400 UTC",
+        "correct": false
+      },
+      {
+        "text": "0200 UTC",
+        "correct": false
+      },
+      {
+        "text": "1500 UTC",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0010",
+    "question": "Godzina 0300 czasu lokalnego zimą w Polsce odpowiada godzinie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0010",
+    "answers": [
+      {
+        "text": "0200 UTC",
+        "correct": true
+      },
+      {
+        "text": "0400 UTC",
+        "correct": false
+      },
+      {
+        "text": "0100 UTC",
+        "correct": false
+      },
+      {
+        "text": "1500 UTC",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0011",
+    "question": "Godzina 1300 czasu lokalnego zimą w Polsce odpowiada godzinie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0011",
+    "answers": [
+      {
+        "text": "1200 UTC",
+        "correct": true
+      },
+      {
+        "text": "1400 UTC",
+        "correct": false
+      },
+      {
+        "text": "0100 UTC",
+        "correct": false
+      },
+      {
+        "text": "1100 UTC",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0012",
+    "question": "Godzina 2300 czasu lokalnego latem w Polsce odpowiada godzinie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0012",
+    "answers": [
+      {
+        "text": "2100 UTC",
+        "correct": true
+      },
+      {
+        "text": "0100 UTC dnia następnego",
+        "correct": false
+      },
+      {
+        "text": "2200 UTC",
+        "correct": false
+      },
+      {
+        "text": "1100 UTC",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0013",
+    "question": "Ile centymetrów na mapie lotniczej w skali 1:500 000 ma odcinek odpowiadający odległości 105 km w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0013",
+    "answers": [
+      {
+        "text": "21 cm",
+        "correct": true
+      },
+      {
+        "text": "42 cm",
+        "correct": false
+      },
+      {
+        "text": "25 cm",
+        "correct": false
+      },
+      {
+        "text": "10.5 cm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0014",
+    "question": "Ile wynosi wartość inklinacji na magnetycznym biegunie północnym?",
+    "url": null,
+    "answers": [
+      {
+        "text": "90 stopni",
+        "correct": true
+      },
+      {
+        "text": "0 stopni",
+        "correct": false
+      },
+      {
+        "text": "60 stopni",
+        "correct": false
+      },
+      {
+        "text": "45 stopni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0015",
+    "question": "Inklinacja magnetyczna to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kąt zawarty między kierunkiem wektora magnetycznego Ziemi a płaszczyzną styczną do jej powierzchni",
+        "correct": true
+      },
+      {
+        "text": "kąt zawarty między południkiem geograficznym a południkiem magnetycznym",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między południkiem magnetycznym a południkiem busoli, mierzony zgodnie z połówkowym systemem pomiaru kierunku",
+        "correct": false
+      },
+      {
+        "text": "linia łącząca punkty o jednakowej wartości deklinacji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0016",
+    "question": "Izogona to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "linia łącząca punkty o jednakowej wartości deklinacji",
+        "correct": true
+      },
+      {
+        "text": "kąt zawarty między południkiem geograficznym a południkiem magnetycznym",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między południkiem magnetycznym a południkiem busoli, mierzony zgodnie z połówkowym systemem pomiaru kierunku",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między kierunkiem wektora magnetycznego Ziemi a płaszczyzną styczną do jej powierzchni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0017",
+    "question": "Jaka jest wartość inklinacji na magnetycznym biegunie południowym?",
+    "url": null,
+    "answers": [
+      {
+        "text": "90 stopni",
+        "correct": true
+      },
+      {
+        "text": "0 stopni",
+        "correct": false
+      },
+      {
+        "text": "60 stopni",
+        "correct": false
+      },
+      {
+        "text": "45 stopni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0018",
+    "question": "Jaki kierunek określamy jako NE?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0018",
+    "answers": [
+      {
+        "text": "045°",
+        "correct": true
+      },
+      {
+        "text": "095°",
+        "correct": false
+      },
+      {
+        "text": "135°",
+        "correct": false
+      },
+      {
+        "text": "345°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0019",
+    "question": "Jaki kierunek określamy jako NW?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0019",
+    "answers": [
+      {
+        "text": "315°",
+        "correct": true
+      },
+      {
+        "text": "295°",
+        "correct": false
+      },
+      {
+        "text": "335°",
+        "correct": false
+      },
+      {
+        "text": "205°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0020",
+    "question": "Jaki kierunek określamy jako SE?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0020",
+    "answers": [
+      {
+        "text": "135°",
+        "correct": true
+      },
+      {
+        "text": "095°",
+        "correct": false
+      },
+      {
+        "text": "315°",
+        "correct": false
+      },
+      {
+        "text": "045°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0021",
+    "question": "Jaki kierunek określamy jako SW?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0021",
+    "answers": [
+      {
+        "text": "225°",
+        "correct": true
+      },
+      {
+        "text": "295°",
+        "correct": false
+      },
+      {
+        "text": "335°",
+        "correct": false
+      },
+      {
+        "text": "205°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0022",
+    "question": "Jeden stopień łuku wielkiego koła Ziemi odpowiada odległości:",
+    "url": null,
+    "answers": [
+      {
+        "text": "60 NM",
+        "correct": true
+      },
+      {
+        "text": "1 NM",
+        "correct": false
+      },
+      {
+        "text": "60 km",
+        "correct": false
+      },
+      {
+        "text": "100 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0023",
+    "question": "Jedna mila morska [1 NM] to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "1852m",
+        "correct": true
+      },
+      {
+        "text": "1620m",
+        "correct": false
+      },
+      {
+        "text": "1820m",
+        "correct": false
+      },
+      {
+        "text": "1013m",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0024",
+    "question": "Jedna minuta łuku wielkiego koła Ziemi odpowiada odległości:",
+    "url": null,
+    "answers": [
+      {
+        "text": "1 NM",
+        "correct": true
+      },
+      {
+        "text": "1 km",
+        "correct": false
+      },
+      {
+        "text": "60 km",
+        "correct": false
+      },
+      {
+        "text": "2 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0025",
+    "question": "Jest godzina 1200 UTC. Kierownik lotów na lotnisku Łódź-Lublinek patrzy prosto na południe. Widzi on tarczę słońca:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0025",
+    "answers": [
+      {
+        "text": "po prawej stronie",
+        "correct": true
+      },
+      {
+        "text": "po lewej stronie",
+        "correct": false
+      },
+      {
+        "text": "dokładnie przed sobą",
+        "correct": false
+      },
+      {
+        "text": "w czasie letnim po prawej, w czasie zimowym - po lewej stronie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0026",
+    "question": "Jeśli w okienku nastaw wysokościomierza wybrana będzie wartość ciśnienia QNH, to wysokościomierz będzie wskazywał:",
+    "url": null,
+    "answers": [
+      {
+        "text": "wysokość bezwzględną",
+        "correct": true
+      },
+      {
+        "text": "wysokość rzeczywistą",
+        "correct": false
+      },
+      {
+        "text": "wysokość względną",
+        "correct": false
+      },
+      {
+        "text": "poziom lotu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0027",
+    "question": "Jeżeli deklinacja magnetyczna i dewiacja busoli jest dodatnia [ΔM>0 i ΔB>0], to kurs busoli jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "mniejszy od kursu geograficznego",
+        "correct": true
+      },
+      {
+        "text": "większy od kursu geograficznego",
+        "correct": false
+      },
+      {
+        "text": "równy kursowi magnetycznemu",
+        "correct": false
+      },
+      {
+        "text": "równy kursowi geograficznemu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0028",
+    "question": "Jeżeli deklinacja magnetyczna i dewiacja busoli jest ujemna [ΔM<0 i ΔB<0], to kurs busoli jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "większy od kursu geograficznego",
+        "correct": true
+      },
+      {
+        "text": "mniejszy od kursu geograficznego",
+        "correct": false
+      },
+      {
+        "text": "równy kursowi magnetycznemu",
+        "correct": false
+      },
+      {
+        "text": "równy kursowi geograficznemu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0029",
+    "question": "Jeżeli wektor wiatru jest prostopadły do nakazanej linii drogi i wieje z lewej strony to kąt znoszenia jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "maksymalny",
+        "correct": true
+      },
+      {
+        "text": "równy zero",
+        "correct": false
+      },
+      {
+        "text": "dodatni, lecz nie jest maksymalny",
+        "correct": false
+      },
+      {
+        "text": "pomijalnie mały",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0030",
+    "question": "Kąt dwuścienny, zawarty między płaszczyzną południka zerowego a płaszczyzną południka przechodzącego przez dany punkt na powierzchni Ziemi, to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "długość geograficzna",
+        "correct": true
+      },
+      {
+        "text": "południk ziemski",
+        "correct": false
+      },
+      {
+        "text": "równik",
+        "correct": false
+      },
+      {
+        "text": "szerokość geograficzna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0031",
+    "question": "Kąt zawarty między kierunkiem wektora magnetycznego Ziemi a płaszczyzną styczną do jej powierzchni to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "inklinacja",
+        "correct": true
+      },
+      {
+        "text": "deklinacja",
+        "correct": false
+      },
+      {
+        "text": "dewiacja",
+        "correct": false
+      },
+      {
+        "text": "izogona",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0032",
+    "question": "Kąt zawarty między płaszczyzną równika a pionem (promieniem) danego punktu, to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "szerokość geograficzna",
+        "correct": true
+      },
+      {
+        "text": "południk ziemski",
+        "correct": false
+      },
+      {
+        "text": "równik",
+        "correct": false
+      },
+      {
+        "text": "długość geograficzna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0033",
+    "question": "Kąt zawarty między południkiem geograficznym a południkiem magnetycznym to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "deklinacja",
+        "correct": true
+      },
+      {
+        "text": "inklinacja",
+        "correct": false
+      },
+      {
+        "text": "kurs geograficzny",
+        "correct": false
+      },
+      {
+        "text": "kurs magnetyczny",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0034",
+    "question": "Kąt zawarty między południkiem magnetycznym a południkiem busoli, mierzony zgodnie z połówkowym systemem pomiaru kierunku to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "dewiacja",
+        "correct": true
+      },
+      {
+        "text": "deklinacja",
+        "correct": false
+      },
+      {
+        "text": "kurs magnetyczny",
+        "correct": false
+      },
+      {
+        "text": "kurs busoli",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0035",
+    "question": "Kąt znoszenia to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Kąt zawarty między podłużną osią statku powietrznego a nakazaną linią drogi.",
+        "correct": true
+      },
+      {
+        "text": "Kąt zawarty między północnym zwrotem południka a linią drogi.",
+        "correct": false
+      },
+      {
+        "text": "Kąt zawarty między kierunkiem \"\"dokąd wieje wiatr\"\" a północą magnetyczną.",
+        "correct": false
+      },
+      {
+        "text": "Kąt zawarty między podłużną osią statku powietrznego a kierunkiem „skąd wieje wiatr”",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0036",
+    "question": "Kierunek 045 < sup >°</sup > określamy jako",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0036",
+    "answers": [
+      {
+        "text": "NE",
+        "correct": true
+      },
+      {
+        "text": "SE",
+        "correct": false
+      },
+      {
+        "text": "SW",
+        "correct": false
+      },
+      {
+        "text": "NW",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0037",
+    "question": "Kierunek 135 < sup >°</sup > określamy jako",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0037",
+    "answers": [
+      {
+        "text": "SE",
+        "correct": true
+      },
+      {
+        "text": "NE",
+        "correct": false
+      },
+      {
+        "text": "SW",
+        "correct": false
+      },
+      {
+        "text": "NW",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0038",
+    "question": "Kierunek 225 <sup>°</sup> określamy jako",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0038",
+    "answers": [
+      {
+        "text": "SW",
+        "correct": true
+      },
+      {
+        "text": "SE",
+        "correct": false
+      },
+      {
+        "text": "NE",
+        "correct": false
+      },
+      {
+        "text": "NW",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0039",
+    "question": "Kierunek 315<sup>°</sup> określamy jako",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0039",
+    "answers": [
+      {
+        "text": "NW",
+        "correct": true
+      },
+      {
+        "text": "SE",
+        "correct": false
+      },
+      {
+        "text": "SW",
+        "correct": false
+      },
+      {
+        "text": "NE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0040",
+    "question": "Kody specjalne modu A transpondera to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "7500 - HIJACK;  7600 - COMMUNICATION FAILURE;  7700 – EMERGENCY",
+        "correct": true
+      },
+      {
+        "text": "7500 - EMERGENCY;  7600 - COMMUNICATION FAILURE;  7700 - HIJACK",
+        "correct": false
+      },
+      {
+        "text": "7500 - HIJACK;  7600 - EMERGENCY;  7700 - COMMUNICATION FAILURE",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0049",
+    "question": "Krótszy łuk wielkiego koła wyznaczający najmniejszą odległość między dwoma punktami na powierzchni Ziemi to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "ortodroma",
+        "correct": true
+      },
+      {
+        "text": "loksodroma",
+        "correct": false
+      },
+      {
+        "text": "krzywa łącząca te punkty i składająca się z szeregu odcinków loksodromicznych",
+        "correct": false
+      },
+      {
+        "text": "izohipsa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0050",
+    "question": "Kurs statku powietrznego to mierzony w prawo od 0 do 360 < sup >°< /sup > kąt zawarty między:",
+    "url": null,
+    "answers": [
+      {
+        "text": "północnym kierunkiem południka a podłużną osią statku powietrznego",
+        "correct": true
+      },
+      {
+        "text": "północnym kierunkiem południka a kierunkiem nakazanej drogi statku powietrznego",
+        "correct": false
+      },
+      {
+        "text": "północnym kierunkiem południka a poprzeczną osią statku powietrznego",
+        "correct": false
+      },
+      {
+        "text": "północnym kierunkiem południka a kierunkiem drogi starowej",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0051",
+    "question": "Latem w Polsce Uniwersalny Czas Skoordynowany (UTC) obliczymy poprzez:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0051",
+    "answers": [
+      {
+        "text": "odjęcie od czasu lokalnego (LMT) dwóch godzin [UTC=LMT-2h]",
+        "correct": true
+      },
+      {
+        "text": "dodanie to czasu lokalnego (LMT) jednej godziny [UTC=LMT+1h]",
+        "correct": false
+      },
+      {
+        "text": "dodanie to czasu lokalnego (LMT) dwóch godzin [UTC=LMT+2h]",
+        "correct": false
+      },
+      {
+        "text": "odjęcie od czasu lokalnego (LMT) jednej godziny [UTC=LMT-1h]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0052",
+    "question": "Linia łącząca punkty o jednakowej wartości deklinacji to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "izogona",
+        "correct": true
+      },
+      {
+        "text": "deklinacja",
+        "correct": false
+      },
+      {
+        "text": "dewiacja",
+        "correct": false
+      },
+      {
+        "text": "inklinacja",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0053",
+    "question": "Linia na powierzchni Ziemi przecinająca południki pod tymi samymi kątami to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "loksodroma",
+        "correct": true
+      },
+      {
+        "text": "ortodroma",
+        "correct": false
+      },
+      {
+        "text": "izogona",
+        "correct": false
+      },
+      {
+        "text": "izobara",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0054",
+    "question": "Łuk łączący oba bieguny geograficzne Ziemi, będący przecięciem powierzchni Ziemi płaszczyzną przechodzącą przez oś obrotu Ziemi, to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "południk ziemski",
+        "correct": true
+      },
+      {
+        "text": "równik",
+        "correct": false
+      },
+      {
+        "text": "długość geograficzna",
+        "correct": false
+      },
+      {
+        "text": "szerokość geograficzna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0055",
+    "question": "Łuk powstały w wyniku przecięcia powierzchni Ziemi płaszczyzną prostopadłą do osi Ziemi przechodzącą przez jej środek, to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "równik",
+        "correct": true
+      },
+      {
+        "text": "południk ziemski",
+        "correct": false
+      },
+      {
+        "text": "długość geograficzna",
+        "correct": false
+      },
+      {
+        "text": "szerokość geograficzna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0056",
+    "question": "Mając następujące dane: kurs geograficzny 200 stopni, deklinacja 10 stopni W, dewiacja -4 stopni, podaj kurs busoli",
+    "url": null,
+    "answers": [
+      {
+        "text": "214 stopni",
+        "correct": true
+      },
+      {
+        "text": "186 stopni",
+        "correct": false
+      },
+      {
+        "text": "206 stopni",
+        "correct": false
+      },
+      {
+        "text": "194 stopni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0058",
+    "question": "Na mapie lotniczej w skali 1:1 000 000 odcinek 20 cm odpowiada rzeczywistej odległości w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0058",
+    "answers": [
+      {
+        "text": "200 km",
+        "correct": true
+      },
+      {
+        "text": "50 km",
+        "correct": false
+      },
+      {
+        "text": "100 km",
+        "correct": false
+      },
+      {
+        "text": "20 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0059",
+    "question": "Na mapie lotniczej w skali 1:200 000 odcinek 20 cm odpowiada rzeczywistej odległości w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0059",
+    "answers": [
+      {
+        "text": "40 km",
+        "correct": true
+      },
+      {
+        "text": "20 km",
+        "correct": false
+      },
+      {
+        "text": "80 km",
+        "correct": false
+      },
+      {
+        "text": "100 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0060",
+    "question": "Na mapie lotniczej w skali 1:500 000 odcinek 20 cm odpowiada rzeczywistej odległości w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0060",
+    "answers": [
+      {
+        "text": "100 km",
+        "correct": true
+      },
+      {
+        "text": "50 km",
+        "correct": false
+      },
+      {
+        "text": "10 km",
+        "correct": false
+      },
+      {
+        "text": "200 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0061",
+    "question": "Na mapie lotniczej w skali 1:500 000 odległość między punktami wynosi 27 cm. Jaki jest faktyczny dystans pomiędzy nimi?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0061",
+    "answers": [
+      {
+        "text": "73 NM",
+        "correct": true
+      },
+      {
+        "text": "54 NM",
+        "correct": false
+      },
+      {
+        "text": "108 NM",
+        "correct": false
+      },
+      {
+        "text": "135 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0062",
+    "question": "Nastawienie ruchomej skali wysokościomierza tak, aby wskazał wzniesienie terenu, gdy jest na ziemi (na lotnisku) oznaczamy jako:",
+    "url": null,
+    "answers": [
+      {
+        "text": "QNH",
+        "correct": true
+      },
+      {
+        "text": "QNE",
+        "correct": false
+      },
+      {
+        "text": "QFE",
+        "correct": false
+      },
+      {
+        "text": "QDM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0064",
+    "question": "NKDG = 259°, NKDM = 255°, ΔB = +2°. Wartości ΔM i KB wynoszą odpowiednio:",
+    "url": null,
+    "answers": [
+      {
+        "text": "4°E, 253°",
+        "correct": true
+      },
+      {
+        "text": "2°W, 255°",
+        "correct": false
+      },
+      {
+        "text": "4°W, 251°",
+        "correct": false
+      },
+      {
+        "text": "2°E, 249°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0065",
+    "question": "NKDG = 358°, ΔM = 5°W, ΔB = +4°. Wartości NKDM i KB wynoszą odpowiednio:",
+    "url": null,
+    "answers": [
+      {
+        "text": "003°, 359°",
+        "correct": true
+      },
+      {
+        "text": "359°, 003°",
+        "correct": false
+      },
+      {
+        "text": "007°, 010°",
+        "correct": false
+      },
+      {
+        "text": "360°, 359°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0066",
+    "question": "Odległość pomiędzy 10 a 11° długości geograficznej zachodniej na równiku wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "111 km",
+        "correct": true
+      },
+      {
+        "text": "60 km",
+        "correct": false
+      },
+      {
+        "text": "60 mil lądowych",
+        "correct": false
+      },
+      {
+        "text": "111 mil morskich",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0067",
+    "question": "Odległość pomiędzy 29 a 30° długości geograficznej wschodniej na równiku wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "111 km",
+        "correct": true
+      },
+      {
+        "text": "60 km",
+        "correct": false
+      },
+      {
+        "text": "60 mil lądowych",
+        "correct": false
+      },
+      {
+        "text": "111 mil morskich",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0068",
+    "question": "Odległość pomiędzy 45 a 46° szerokości geograficznej północnej wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "111 km",
+        "correct": true
+      },
+      {
+        "text": "60 km",
+        "correct": false
+      },
+      {
+        "text": "60 mil lądowych",
+        "correct": false
+      },
+      {
+        "text": "111 mil morskich",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0069",
+    "question": "Pod określeniem “węzeł” [kt] rozumiemy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "NM/h",
+        "correct": true
+      },
+      {
+        "text": "SM/h",
+        "correct": false
+      },
+      {
+        "text": "km/h",
+        "correct": false
+      },
+      {
+        "text": "m/h",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0070",
+    "question": "Podaj długość równika Ziemi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "21 600 NM",
+        "correct": true
+      },
+      {
+        "text": "21 600 km",
+        "correct": false
+      },
+      {
+        "text": "12 714 NM",
+        "correct": false
+      },
+      {
+        "text": "6 865 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0071",
+    "question": "Południk ziemski to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "łuk łączący oba bieguny geograficzne Ziemi, będący przecięciem powierzchni Ziemi płaszczyzną przechodzącą przez oś obrotu Ziemi",
+        "correct": true
+      },
+      {
+        "text": "łuk powstały w wyniku przecięcia powierzchni Ziemi płaszczyzną prostopadłą do osi Ziemi przechodzącą przez jej środek",
+        "correct": false
+      },
+      {
+        "text": "kąt dwuścienny, zawarty między płaszczyzną południka zerowego a płaszczyzną południka przechodzącego przez dany punkt na powierzchni Ziemi",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między płaszczyzną równika a pionem (promieniem) danego punktu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0072",
+    "question": "Prędkość 15 m/s przeliczona na węzły to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "30",
+        "correct": true
+      },
+      {
+        "text": "27",
+        "correct": false
+      },
+      {
+        "text": "24",
+        "correct": false
+      },
+      {
+        "text": "34",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0073",
+    "question": "Prędkość 180 km/h przeliczona na m/s to:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0073",
+    "answers": [
+      {
+        "text": "50",
+        "correct": true
+      },
+      {
+        "text": "30",
+        "correct": false
+      },
+      {
+        "text": "60",
+        "correct": false
+      },
+      {
+        "text": "90",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0074",
+    "question": "Prędkość 20 m/s przeliczona na km/h to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "72",
+        "correct": true
+      },
+      {
+        "text": "24",
+        "correct": false
+      },
+      {
+        "text": "88",
+        "correct": false
+      },
+      {
+        "text": "100",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0075",
+    "question": "Prędkość podróżna GS to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "prędkość przemieszczania się statku powietrznego względem ziemi",
+        "correct": true
+      },
+      {
+        "text": "CAS z uwzględnieniem wiatru",
+        "correct": false
+      },
+      {
+        "text": "IAS z uwzględnieniem wiatru",
+        "correct": false
+      },
+      {
+        "text": "liczba Macha",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0076",
+    "question": "Przy pomiarze azymutów (kątów drogi) na mapie odwzorowania międzynarodowego ICAO najmniejszy błąd pomiaru uzyskuje się, gdy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kątomierz przykłada się przy południku najbliższym środka odcinka trasy",
+        "correct": true
+      },
+      {
+        "text": "kątomierz przykłada się na punkcie odlotowym trasy",
+        "correct": false
+      },
+      {
+        "text": "kątomierz przykłada się w punkcie przecięcia przedłużenia odcinka trasy z południkiem ramki mapy",
+        "correct": false
+      },
+      {
+        "text": "kątomierz przykłada się na punkcie docelowym trasy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0078",
+    "question": "Punkty A i B są oddalone od siebie o 15 km. Na mapie odcinek między nimi ma długość 6 cm. Jaka jest skala tej mapy?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0078",
+    "answers": [
+      {
+        "text": "1 : 250 000",
+        "correct": true
+      },
+      {
+        "text": "1 : 300 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 400 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 500 000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0079",
+    "question": "Punkty A i B są oddalone od siebie o 25 km. Na mapie odcinek między nimi ma długość 10 cm. Jaka jest skala tej mapy?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0079",
+    "answers": [
+      {
+        "text": "1 : 250 000",
+        "correct": true
+      },
+      {
+        "text": "1 : 300 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 400 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 500 000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0080",
+    "question": "Punkty A i B są oddalone od siebie o 45 km. Na mapie odcinek między nimi ma długość 9 cm. Jaka jest skala tej mapy?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0080",
+    "answers": [
+      {
+        "text": "1 : 500 000",
+        "correct": true
+      },
+      {
+        "text": "1 : 250 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 400 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 300 000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0081",
+    "question": "QFE jest to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "ciśnienie atmosferyczne na poziomie lotniska lub na progu drogi startowej",
+        "correct": true
+      },
+      {
+        "text": "ciśnienie na średnim poziomie morza",
+        "correct": false
+      },
+      {
+        "text": "ciśnienie standard",
+        "correct": false
+      },
+      {
+        "text": "fabryczna nastawa wysokościomierza",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0082",
+    "question": "QNH jest to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "nastawienie ruchomej skali wysokościomierza tak, aby wskazał wzniesienie terenu, gdy jest na ziemi (na lotnisku)",
+        "correct": true
+      },
+      {
+        "text": "ciśnienie atmosferyczne na poziomie lotniska lub na progu drogi startowej",
+        "correct": false
+      },
+      {
+        "text": "ciśnienie standard",
+        "correct": false
+      },
+      {
+        "text": "fabryczna nastawa wysokościomierza",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0083",
+    "question": "Równik ziemski to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "łuk powstały w wyniku przecięcia powierzchni Ziemi płaszczyzną prostopadłą do osi Ziemi przechodzącą przez jej środek",
+        "correct": true
+      },
+      {
+        "text": "łuk łączący oba bieguny geograficzne Ziemi, będący przecięciem powierzchni Ziemi płaszczyzną przechodzącą przez oś obrotu Ziemi",
+        "correct": false
+      },
+      {
+        "text": "kąt dwuścienny, zawarty między płaszczyzną południka zerowego a płaszczyzną południka przechodzącego przez dany punkt na powierzchni Ziemi",
+        "correct": false
+      },
+      {
+        "text": "kąt zawarty między płaszczyzną równika a pionem (promieniem) danego punktu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0084",
+    "question": "Równik ziemski tworzy z wszystkimi południkami geograficznymi kąt:",
+    "url": null,
+    "answers": [
+      {
+        "text": "90°",
+        "correct": true
+      },
+      {
+        "text": "60°",
+        "correct": false
+      },
+      {
+        "text": "45°",
+        "correct": false
+      },
+      {
+        "text": "180°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0085",
+    "question": "Szerokość geograficzna to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kąt zawarty między płaszczyzną równika a pionem (promieniem) danego punktu",
+        "correct": true
+      },
+      {
+        "text": "łuk powstały w wyniku przecięcia powierzchni Ziemi płaszczyzną prostopadłą do osi Ziemi przechodzącą przez jej środek",
+        "correct": false
+      },
+      {
+        "text": "kąt dwuścienny, zawarty między płaszczyzną południka zerowego a płaszczyzną południka przechodzącego przez dany punkt na powierzchni Ziemi",
+        "correct": false
+      },
+      {
+        "text": "łuk łączący oba bieguny geograficzne Ziemi, będący przecięciem powierzchni Ziemi płaszczyzną przechodzącą przez oś obrotu Ziemi",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0086",
+    "question": "Średnia prędkość podróżna statku powietrznego wynosi 60 km/h. W czasie 18 minut zostanie przebyta odległość",
+    "url": null,
+    "answers": [
+      {
+        "text": "18 km",
+        "correct": true
+      },
+      {
+        "text": "12 km",
+        "correct": false
+      },
+      {
+        "text": "3 km",
+        "correct": false
+      },
+      {
+        "text": "23 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0087",
+    "question": "Wariometr pokazuje wartość 500 ft/min. Po przeliczeniu to:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0087",
+    "answers": [
+      {
+        "text": "2.5 m/s",
+        "correct": true
+      },
+      {
+        "text": "3.5 m/s",
+        "correct": false
+      },
+      {
+        "text": "5.0 m/s",
+        "correct": false
+      },
+      {
+        "text": "15 m/s",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0088",
+    "question": "Wariometr pokazuje wartość 750 ft/min. Po przeliczeniu to:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0088",
+    "answers": [
+      {
+        "text": "3.8 m/s",
+        "correct": true
+      },
+      {
+        "text": "2.5 m/s",
+        "correct": false
+      },
+      {
+        "text": "5.0 m/s",
+        "correct": false
+      },
+      {
+        "text": "7.5 m/s",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0089",
+    "question": "Wysokość bezwzględna to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "wysokość mierzona od średniego poziomu morza",
+        "correct": true
+      },
+      {
+        "text": "wysokość mierzona od poziomu terenu, nad którym statek powietrzny w danej chwili przelatuje",
+        "correct": false
+      },
+      {
+        "text": "wysokość mierzona od dowolnej powierzchni (poziomu), np. od poziomu progu pasa startowego",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0090",
+    "question": "Wysokość rzeczywista to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "wysokość mierzona od poziomu terenu, nad którym statek powietrzny w danej chwili przelatuje",
+        "correct": true
+      },
+      {
+        "text": "wysokość mierzona od poziomu morza",
+        "correct": false
+      },
+      {
+        "text": "wysokość mierzona od dowolnej powierzchni (poziomu), np. od poziomu progu pasa startowego",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0091",
+    "question": "Wysokość względna to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "wysokość mierzona od dowolnej powierzchni (poziomu), np. od poziomu progu pasa startowego",
+        "correct": true
+      },
+      {
+        "text": "wysokość mierzona od poziomu terenu, nad którym statek powietrzny w danej chwili przelatuje",
+        "correct": false
+      },
+      {
+        "text": "wysokość mierzona od poziomu morza",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0092",
+    "question": "Z poniższej listy wybierz obiekt orientacyjny liniowy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "tory kolejowe",
+        "correct": true
+      },
+      {
+        "text": "ostry zakręt rzeki",
+        "correct": false
+      },
+      {
+        "text": "wysoki maszt radiowy",
+        "correct": false
+      },
+      {
+        "text": "most",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0093",
+    "question": "Z poniższej listy wybierz obiekt orientacyjny powierzchniowy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "duże miasto",
+        "correct": true
+      },
+      {
+        "text": "wieś",
+        "correct": false
+      },
+      {
+        "text": "brzeg morza",
+        "correct": false
+      },
+      {
+        "text": "skrzyżowanie głównych dróg",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0094",
+    "question": "Z poniższej listy wybierz obiekt orientacyjny punktowy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "most",
+        "correct": true
+      },
+      {
+        "text": "duże miasto",
+        "correct": false
+      },
+      {
+        "text": "tory kolejowe",
+        "correct": false
+      },
+      {
+        "text": "masyw leśny",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0095",
+    "question": "Zimą w Polsce Uniwersalny Czas Skoordynowany (UTC) obliczymy poprzez:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0095",
+    "answers": [
+      {
+        "text": "odjęcie od czasu lokalnego (LMT) jednej godziny [UTC=LMT-1h]",
+        "correct": true
+      },
+      {
+        "text": "dodanie do czasu lokalnego (LMT) jednej godziny [UTC=LMT+1h]",
+        "correct": false
+      },
+      {
+        "text": "dodanie do czasu lokalnego (LMT) dwóch godzin [UTC=LMT+2h]",
+        "correct": false
+      },
+      {
+        "text": "odjęcie od czasu lokalnego (LMT) dwóch godzin [UTC=LMT-2h]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0096",
+    "question": "ΔM = 2°E, ΔB = -3°, KB = 127°. Wartości NKDM i NKDG wynoszą odpowiednio:",
+    "url": null,
+    "answers": [
+      {
+        "text": "124°, 126°",
+        "correct": true
+      },
+      {
+        "text": "126°, 128°",
+        "correct": false
+      },
+      {
+        "text": "124°, 124°",
+        "correct": false
+      },
+      {
+        "text": "126°, 124°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0097",
+    "question": "ΔM = 3°E, NKDM = 188°, KB = 190°. Wartości NKDG i ΔB wynoszą odpowiednio:",
+    "url": null,
+    "answers": [
+      {
+        "text": "191°, -2°",
+        "correct": true
+      },
+      {
+        "text": "185°, -2°",
+        "correct": false
+      },
+      {
+        "text": "194°, +4°",
+        "correct": false
+      },
+      {
+        "text": "189°, -3°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0101",
+    "question": "Aby przeliczyć odległość podaną w kilometrach na mile morskie, stosujemy następującą regułę:",
+    "url": null,
+    "answers": [
+      {
+        "text": "(km : 2) + 10%",
+        "correct": true
+      },
+      {
+        "text": "(km × 2) - 20%",
+        "correct": false
+      },
+      {
+        "text": "(km : 2) - 10%",
+        "correct": false
+      },
+      {
+        "text": "(km × 2) - 10 %",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0102",
+    "question": "Aby przeliczyć odległość podaną w metrach na stopy, stosujemy następującą regułę:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0102",
+    "answers": [
+      {
+        "text": "(m × 3) + 10%",
+        "correct": true
+      },
+      {
+        "text": "m × 0.3",
+        "correct": false
+      },
+      {
+        "text": "(m : 10) × 3",
+        "correct": false
+      },
+      {
+        "text": "(m × 3) : 10",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0103",
+    "question": "ADF (Automatic Direction Finder) jest to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "radiokompas",
+        "correct": true
+      },
+      {
+        "text": "radionamiernik VHF",
+        "correct": false
+      },
+      {
+        "text": "pokładowe urządzenie odzewowe.",
+        "correct": false
+      },
+      {
+        "text": "transponder radaru wtórnego",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0109",
+    "question": "Bezwładnościowy system nawigacyjny działa na zasadzie:",
+    "url": null,
+    "answers": [
+      {
+        "text": "zliczania zmian położenia w przestrzeni i przyspieszeń, którym podlega statek powietrzny",
+        "correct": true
+      },
+      {
+        "text": "pomiaru różnicy głębokości modulacji,",
+        "correct": false
+      },
+      {
+        "text": "pomiaru różnicy odległości.",
+        "correct": false
+      },
+      {
+        "text": "porównywania prędkości IAS i TAS",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0110",
+    "question": "Ciśnienie standardowe oznaczamy jako:",
+    "url": null,
+    "answers": [
+      {
+        "text": "QNE",
+        "correct": true
+      },
+      {
+        "text": "QFE",
+        "correct": false
+      },
+      {
+        "text": "QNH",
+        "correct": false
+      },
+      {
+        "text": "QDM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0111",
+    "question": "Ciśnienie standardowe wyrażone w calach słupa rtęci wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "29.92 inHg",
+        "correct": true
+      },
+      {
+        "text": "32.10 inHg",
+        "correct": false
+      },
+      {
+        "text": "28.50 inHg",
+        "correct": false
+      },
+      {
+        "text": "10.13 inHg",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0112",
+    "question": "Czas używany w systemie GPS to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "własny czas systemu skorelowany z UTC.",
+        "correct": true
+      },
+      {
+        "text": "własny czas systemu zupełnie niezależny od UTC.",
+        "correct": false
+      },
+      {
+        "text": "Czas zegarów satelitów i systemu dokładnie odpowiada UTC.",
+        "correct": false
+      },
+      {
+        "text": "Czas zegarów satelitów i systemu dokładnie odpowiada UTC + 6.5h.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0115",
+    "question": "Dokąd doleci statek powietrzny, który wystartował z lotniska EPWA z kursem 300 stopni lecąc w warunkach bezwietrznych po loksodromie:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Lotem po spirali będzie leciał w kierunku bieguna północnego, dążąc do jego osiągnięcia.",
+        "correct": true
+      },
+      {
+        "text": "Z kursem 300 stopni będzie leciał po równoleżniku i wróci do miejsca wylotu.",
+        "correct": false
+      },
+      {
+        "text": "Korygując kurs doleci do miejsca wylotu.",
+        "correct": false
+      },
+      {
+        "text": "Będzie lecieć po południku do bieguna północnego",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0117",
+    "question": "Dostrojenie pokładowego zestawu VOR/DME następuje przez:",
+    "url": null,
+    "answers": [
+      {
+        "text": "nastawienie częstotliwości VOR.",
+        "correct": true
+      },
+      {
+        "text": "nastawienie aktualnego ciśnienia QFE,",
+        "correct": false
+      },
+      {
+        "text": "wybranie kanału DME,",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0118",
+    "question": "Gdy samolot leci na półkuli północnej z kursem wschodnim i przyspiesza to powstający błąd przyspieszeniowy powoduje, że busola:",
+    "url": null,
+    "answers": [
+      {
+        "text": "wskazuje zakręt w kierunku północy",
+        "correct": true
+      },
+      {
+        "text": "wskazuje kurs 090",
+        "correct": false
+      },
+      {
+        "text": "wskazuje zakręt w kierunku południowym",
+        "correct": false
+      },
+      {
+        "text": "zwalnia wskazywaną prędkość zakrętu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0119",
+    "question": "Gdy samolot leci na półkuli północnej z kursem zachodnim i przyspiesza to powstający błąd przyspieszeniowy powoduje, że busola:",
+    "url": null,
+    "answers": [
+      {
+        "text": "wskazuje zakręt w kierunku północy",
+        "correct": true
+      },
+      {
+        "text": "wskazuje kurs 270",
+        "correct": false
+      },
+      {
+        "text": "wskazuje zakręt w kierunku południowym",
+        "correct": false
+      },
+      {
+        "text": "zwalnia wskazywaną prędkość zakrętu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0120",
+    "question": "Głównym powodem, dla którego odległościowy detektor pola magnetycznego dla busoli magnetycznej montuje się na końcówce skrzydła samolotu, jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Umieszczenie tego urządzenia w miejscu, gdzie nie ma żadnych obwodów elektrycznych powodujących dewiację",
+        "correct": true
+      },
+      {
+        "text": "Ułatwienie dostępu do urządzenia i zwiększenie dostępności na oddziaływanie ziemskiego pola magnetycznego",
+        "correct": false
+      },
+      {
+        "text": "Umieszczenie tego urządzenia w pozycji, gdzie nie będzie warunków do uszkodzenia tego urządzenia podczas uderzenia pioruna",
+        "correct": false
+      },
+      {
+        "text": "Żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0122",
+    "question": "Ile centymetrów na mapie w skali 1:10 000 ma odcinek odpowiadający odległości 2 km w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0122",
+    "answers": [
+      {
+        "text": "20 cm",
+        "correct": true
+      },
+      {
+        "text": "40 cm",
+        "correct": false
+      },
+      {
+        "text": "5 cm",
+        "correct": false
+      },
+      {
+        "text": "10.5 cm",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0125",
+    "question": "Jaką prędkość obserwujemy na wskaźniku DME?",
+    "url": null,
+    "answers": [
+      {
+        "text": "podróżną (GS)",
+        "correct": true
+      },
+      {
+        "text": "przyrządową (IAS)",
+        "correct": false
+      },
+      {
+        "text": "rzeczywistą (TAS)",
+        "correct": false
+      },
+      {
+        "text": "liczbę Macha.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0127",
+    "question": "Jakich częstotliwości używa system VOR?:",
+    "url": null,
+    "answers": [
+      {
+        "text": "108.00-117.95 MHz",
+        "correct": true
+      },
+      {
+        "text": "107.95-117.95 MHz",
+        "correct": false
+      },
+      {
+        "text": "108.00-117.00 kHz",
+        "correct": false
+      },
+      {
+        "text": "112.05-118.00 MHz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0128",
+    "question": "Jakie będzie wskazanie odległości DME w kabinie pilotów w chwili przelotu statku powietrznego bezpośrednio nad radiolatarnią VOR/DME?",
+    "url": null,
+    "answers": [
+      {
+        "text": "Wskazanie równe wysokości, na jakiej leci statek powietrzny.",
+        "correct": true
+      },
+      {
+        "text": "0 (zero).",
+        "correct": false
+      },
+      {
+        "text": "Nie będzie żadnego wskazania, gdyż statek powietrzny znajdzie się w stożku martwym urządzenia.",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0129",
+    "question": "Jedna mila morska [1 NM] to (w zaokrągleniu):",
+    "url": null,
+    "answers": [
+      {
+        "text": "6000 stóp",
+        "correct": true
+      },
+      {
+        "text": "5000 stóp",
+        "correct": false
+      },
+      {
+        "text": "4500 stóp",
+        "correct": false
+      },
+      {
+        "text": "8000 stóp",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0130",
+    "question": "Jednemu hektopaskalowi zmiany ciśnienia przy ziemi odpowiada (w zaokrągleniu) zmiana wysokości:",
+    "url": null,
+    "answers": [
+      {
+        "text": "30 stóp",
+        "correct": true
+      },
+      {
+        "text": "40 stóp",
+        "correct": false
+      },
+      {
+        "text": "10 stóp",
+        "correct": false
+      },
+      {
+        "text": "50 stóp",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0133",
+    "question": "Kąt pomiędzy kursem statku powietrznego a kierunkiem, pod jakim samolot przemieszcza się względem Ziemi, nazywamy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kątem znoszenia",
+        "correct": true
+      },
+      {
+        "text": "kątowym bocznym odchyleniem",
+        "correct": false
+      },
+      {
+        "text": "kątową poprawką dopełniającą",
+        "correct": false
+      },
+      {
+        "text": "kątem wiatru",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0134",
+    "question": "Kąt zawarty między osią podłużną samolotu a kierunkiem do radiolatarni NDB to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "KKR",
+        "correct": true
+      },
+      {
+        "text": "QDR",
+        "correct": false
+      },
+      {
+        "text": "QDM",
+        "correct": false
+      },
+      {
+        "text": "QFE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0135",
+    "question": "Kąt zawarty między osią podłużną statku powietrznego a nakazaną linią drogi to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kąt znoszenia",
+        "correct": true
+      },
+      {
+        "text": "kąt wiatru",
+        "correct": false
+      },
+      {
+        "text": "kąt drogi",
+        "correct": false
+      },
+      {
+        "text": "kąt kursowy radiolatarni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0136",
+    "question": "Kąt zawarty między północnym kierunkiem południka magnetycznego przechodzącego przez radiolatarnię bezkierunkową a kierunkiem na samolot to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "QDR",
+        "correct": true
+      },
+      {
+        "text": "QDM",
+        "correct": false
+      },
+      {
+        "text": "KKR",
+        "correct": false
+      },
+      {
+        "text": "QFE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0137",
+    "question": "Kąt zawarty między północnym kierunkiem południka magnetycznego przechodzącego przez samolot a kierunkiem do radiolatarni bezkierunkowej to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "QDM",
+        "correct": true
+      },
+      {
+        "text": "QDR",
+        "correct": false
+      },
+      {
+        "text": "Radial",
+        "correct": false
+      },
+      {
+        "text": "QFE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0139",
+    "question": "Liczba Macha to stosunek:",
+    "url": null,
+    "answers": [
+      {
+        "text": "TAS do prędkości dźwięku na danej wysokości",
+        "correct": true
+      },
+      {
+        "text": "IAS do prędkości dźwięku na danej wysokości",
+        "correct": false
+      },
+      {
+        "text": "prędkości dźwięku na danej wysokości do IAS",
+        "correct": false
+      },
+      {
+        "text": "prędkości dźwięku na danej wysokości do TAS",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0140",
+    "question": "Liczba możliwych kodów modu A transpondera wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "4096",
+        "correct": true
+      },
+      {
+        "text": "10000",
+        "correct": false
+      },
+      {
+        "text": "9999",
+        "correct": false
+      },
+      {
+        "text": "7700",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0141",
+    "question": "Mając następujące dane: elewacja lotniska wynosi 1000 ft oraz QNH = 988 hPa, jaka jest aktualna wysokość ciśnieniowa lotniska? (przy założeniu, że 1 hPa = 27 ft)",
+    "url": null,
+    "answers": [
+      {
+        "text": "320 ft",
+        "correct": true
+      },
+      {
+        "text": "1680 ft",
+        "correct": false
+      },
+      {
+        "text": "-320 ft",
+        "correct": false
+      },
+      {
+        "text": "680 ft",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0149",
+    "question": "Model Ziemi dla systemu GPS to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "WGS84.",
+        "correct": true
+      },
+      {
+        "text": "WGPS.",
+        "correct": false
+      },
+      {
+        "text": "GPS84.",
+        "correct": false
+      },
+      {
+        "text": "NAVSTAR.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0151",
+    "question": "Na mapie lotniczej w skali 1:10 000 odcinek 2 cm odpowiada rzeczywistej odległości w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0151",
+    "answers": [
+      {
+        "text": "200 m",
+        "correct": true
+      },
+      {
+        "text": "50 m",
+        "correct": false
+      },
+      {
+        "text": "100 m",
+        "correct": false
+      },
+      {
+        "text": "20 m",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0152",
+    "question": "Na mapie lotniczej w skali 1:500 000 odcinek o długości 10.8 cm pokonano w czasie lotu 20 minut. W tym przypadku prędkość podróżna wynosi:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0152",
+    "answers": [
+      {
+        "text": "162 km/h",
+        "correct": true
+      },
+      {
+        "text": "200 MPH",
+        "correct": false
+      },
+      {
+        "text": "162 kts",
+        "correct": false
+      },
+      {
+        "text": "200 km/h",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0153",
+    "question": "Na mapie w skali 1:10 000 odcinek 20 cm odpowiada rzeczywistej odległości w terenie:",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0153",
+    "answers": [
+      {
+        "text": "2 km",
+        "correct": true
+      },
+      {
+        "text": "5 km",
+        "correct": false
+      },
+      {
+        "text": "10 km",
+        "correct": false
+      },
+      {
+        "text": "20 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0155",
+    "question": "Na wskaźniku odległości DME odczytujemy odległość od stacji naziemnej:",
+    "url": null,
+    "answers": [
+      {
+        "text": "ukośną",
+        "correct": true
+      },
+      {
+        "text": "pionową",
+        "correct": false
+      },
+      {
+        "text": "poziomą",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0156",
+    "question": "Na wskaźniku VOR pełne wychylenie CDI oznacza odchylenie co najmniej ... stopni od zadanego radialu.",
+    "url": null,
+    "answers": [
+      {
+        "text": "10",
+        "correct": true
+      },
+      {
+        "text": "5",
+        "correct": false
+      },
+      {
+        "text": "2",
+        "correct": false
+      },
+      {
+        "text": "12",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0158",
+    "question": "Nadajniki VOR zorientowane są wobec północy:",
+    "url": null,
+    "answers": [
+      {
+        "text": "magnetycznej",
+        "correct": true
+      },
+      {
+        "text": "geograficznej",
+        "correct": false
+      },
+      {
+        "text": "busoli",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0159",
+    "question": "Najbardziej dokładne określenie prędkości podróżnej jest możliwe przy użyciu:",
+    "url": null,
+    "answers": [
+      {
+        "text": "stacji DME usytuowanej na trasie lotu",
+        "correct": true
+      },
+      {
+        "text": "stacji VOR usytuowanej poprzecznie do trasy lotu",
+        "correct": false
+      },
+      {
+        "text": "stacji DME usytuowanej poprzecznie do trasy lotu",
+        "correct": false
+      },
+      {
+        "text": "radiolatarni NDB usytuowanej na trasie lotu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0162",
+    "question": "O godzinie 0830 pilot odczytał KKR=315° z radiolatarni NDB. Lecąc dalej tym samym kursem południowym o 0840 był, na KKR=270°. Zakładając, że nie ma znoszenia przez wiatr oraz że jego prędkość podróżna wynosi 240 kt określ odległość od NDB o godzinie 0840.",
+    "url": null,
+    "answers": [
+      {
+        "text": "40 NM",
+        "correct": true
+      },
+      {
+        "text": "32 NM",
+        "correct": false
+      },
+      {
+        "text": "48 NM",
+        "correct": false
+      },
+      {
+        "text": "38 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0163",
+    "question": "Objętość 20 US gal odpowiada:",
+    "url": null,
+    "answers": [
+      {
+        "text": "76 l",
+        "correct": true
+      },
+      {
+        "text": "92 l",
+        "correct": false
+      },
+      {
+        "text": "20 l",
+        "correct": false
+      },
+      {
+        "text": "53 l",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0164",
+    "question": "Objętość 27 US gal odpowiada:",
+    "url": null,
+    "answers": [
+      {
+        "text": "102 l",
+        "correct": true
+      },
+      {
+        "text": "92 l",
+        "correct": false
+      },
+      {
+        "text": "15 l",
+        "correct": false
+      },
+      {
+        "text": "53 l",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0165",
+    "question": "Objętość 34 l odpowiada:",
+    "url": null,
+    "answers": [
+      {
+        "text": "9 US gal",
+        "correct": true
+      },
+      {
+        "text": "12 US gal",
+        "correct": false
+      },
+      {
+        "text": "18 US gal",
+        "correct": false
+      },
+      {
+        "text": "13 US gal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0166",
+    "question": "Objętość 65 l odpowiada:",
+    "url": null,
+    "answers": [
+      {
+        "text": "17 US gal",
+        "correct": true
+      },
+      {
+        "text": "12 US gal",
+        "correct": false
+      },
+      {
+        "text": "20 US gal",
+        "correct": false
+      },
+      {
+        "text": "13 US gal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0167",
+    "question": "Odbiornik DME podaje dane w jednostkach:",
+    "url": null,
+    "answers": [
+      {
+        "text": "NM, kt, min",
+        "correct": true
+      },
+      {
+        "text": "km, km/h, min",
+        "correct": false
+      },
+      {
+        "text": "w zależności od nastawy",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0168",
+    "question": "Odczyt wskazań odległości DME w samolocie przelatującym na poziomie FL120 pionowo nad stacją VOR / DME (MSL) będzie wynosił:",
+    "url": null,
+    "answers": [
+      {
+        "text": "około 2 NM.",
+        "correct": true
+      },
+      {
+        "text": "nie więcej niż 1 NM.",
+        "correct": false
+      },
+      {
+        "text": "zależy od typu nadajnika DME, ale nigdy więcej niż 1.2 NM.",
+        "correct": false
+      },
+      {
+        "text": "0 NM (+-0.1 NM).",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0169",
+    "question": "Odnośnie radaru prawdą jest, że:",
+    "url": null,
+    "answers": [
+      {
+        "text": "radar pierwotny działa na zasadzie odbicia fal elektromagnetycznych od samolotu, wtórny - na zasadzie odpowiedzi transpondera na pokładzie samolotu.",
+        "correct": true
+      },
+      {
+        "text": "na samolotach instaluje się wyłącznie radar pierwotny, stacje naziemne wyłącznie systemy radarów wtórnych.",
+        "correct": false
+      },
+      {
+        "text": "radar pierwotny jest zawsze mniej dokładny niż radar wtórny.",
+        "correct": false
+      },
+      {
+        "text": "na samolotach instaluje się wyłącznie radar wtórny.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0173",
+    "question": "Pilot aktywuje Special Position Identifier (SPI) w transponderze:",
+    "url": null,
+    "answers": [
+      {
+        "text": "na polecenie kontrolera radarowego",
+        "correct": true
+      },
+      {
+        "text": "przy zmianie częstotliwości radiowej",
+        "correct": false
+      },
+      {
+        "text": "podczas korespondencji radiowej",
+        "correct": false
+      },
+      {
+        "text": "zawsze po ustawieniu nowego kodu (squawk)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0174",
+    "question": "Pilot planuje przelot z lotniska w Jeleniej Górze (N50°53\"\"57,8\"\" E015°47\"\" 7,8\"\") na lotnisko w Zamościu (N50°42\"\"6,5\"\" E023°12\"\"15,3\"\") tak, żeby wylądować przed zachodem słońca. W czasie bezpośredniego przygotowania nawigacyjnego do lotu pilot uwzględnia:",
+    "url": null,
+    "answers": [
+      {
+        "text": "zachód słońca w Zamościu następuje około 30 minut wcześniej",
+        "correct": true
+      },
+      {
+        "text": "zachód słońca w Zamościu następuje około 1 godzinę wcześniej",
+        "correct": false
+      },
+      {
+        "text": "zachód słońca na lotnisku odlotowym i dolotowym następuje w tym samym czasie",
+        "correct": false
+      },
+      {
+        "text": "zachód słońca w Zamościu następuje około 30 minut później",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0175",
+    "question": "Pilot planuje przelot z lotniska w Zamościu (N50°42\"\"6,5\"\" E023°12\"\"15,3\"\") na lotnisko w Jeleniej Górze (N50°53\"\"57,8\"\" E015°47\"\"7,8\"\") tak, żeby wylądować przed zachodem słońca. W czasie bezpośredniego przygotowania nawigacyjnego do lotu pilot uwzględnia:",
+    "url": null,
+    "answers": [
+      {
+        "text": "zachód słońca w Jeleniej Górze następuje 30 minut później",
+        "correct": true
+      },
+      {
+        "text": "zachód słońca w Jeleniej Górze następuje około 1 godzinę wcześniej",
+        "correct": false
+      },
+      {
+        "text": "zachód słońca na lotnisku odlotowym i dolotowym następuje w tym samym czasie",
+        "correct": false
+      },
+      {
+        "text": "zachód słońca w Jeleniej Górze następuje około 30 minut wcześniej",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0176",
+    "question": "Pilot uzyskał z TWR przed startem następującą informację o wietrze przy powierzchni Ziemi: 260 stopni/34kt. Jaka jest składowa poprzeczna wiatru do pasa 30?",
+    "url": null,
+    "answers": [
+      {
+        "text": "23 kt",
+        "correct": true
+      },
+      {
+        "text": "17 kt",
+        "correct": false
+      },
+      {
+        "text": "29 kt",
+        "correct": false
+      },
+      {
+        "text": "34 kt",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0185",
+    "question": "Prędkość podróżna statku powietrznego wynosi 90 węzłów. W czasie 18 minut zostanie przebyta odległość",
+    "url": null,
+    "answers": [
+      {
+        "text": "27 NM",
+        "correct": true
+      },
+      {
+        "text": "18 NM",
+        "correct": false
+      },
+      {
+        "text": "33 NM",
+        "correct": false
+      },
+      {
+        "text": "45 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0186",
+    "question": "Prędkość TAS (True Air Speed) z uwzględnieniem wiatru to:",
+    "url": null,
+    "answers": [
+      {
+        "text": "prędkość podróżna (Ground Speed)",
+        "correct": true
+      },
+      {
+        "text": "liczba Macha",
+        "correct": false
+      },
+      {
+        "text": "prędkość wskazywana IAS (Indicated Air Speed)",
+        "correct": false
+      },
+      {
+        "text": "prędkość poprawiona CAS (Calibrated Air Speed)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0187",
+    "question": "Przed lądowaniem pilot uzyskał z TWR następującą informację o wietrze przy powierzchni Ziemi: 260 stopni/34kt. Jaka jest składowa poprzeczna wiatru do pasa 22?",
+    "url": null,
+    "answers": [
+      {
+        "text": "23 kt",
+        "correct": true
+      },
+      {
+        "text": "17 kt",
+        "correct": false
+      },
+      {
+        "text": "29 kt",
+        "correct": false
+      },
+      {
+        "text": "21 kt",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0190",
+    "question": "Przy założeniu, że magnetyczny kąt drogi od LDZ do JED wynosi 159° a od JED do LDZ 339° to statek powietrzny, który przeleciał LDZ w kierunku JED w warunkach bezwietrznych znajduje się:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Na radialu 159° od VOR LDZ, mając kurs 159°.",
+        "correct": true
+      },
+      {
+        "text": "Na radialu 339° od VOR LDZ, mając kurs 159°.",
+        "correct": false
+      },
+      {
+        "text": "Na radialu 159° od VOR LDZ, mając kurs 339°.",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0191",
+    "question": "Przy założeniu, że magnetyczny kąt drogi od RUDKA do SIE wynosi 233° a od SIE do RUDKA 053° to statek powietrzny, który przeleciał punkt RUDKA w kierunku SIE w warunkach bezwietrznych leci:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Z kursem 233°, z magnetycznym kątem drogi 233°, na radialu 053° od VOR-a SIE.",
+        "correct": true
+      },
+      {
+        "text": "Z kursem 233°, z magnetycznym kątem drogi 053°, na radialu 053° od VOR-a SIE.",
+        "correct": false
+      },
+      {
+        "text": "Z kursem 233°, z magnetycznym kątem drogi 233°, na radialu 233° od VOR-a SIE.",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0192",
+    "question": "Punkt o współrzędnych geograficznych: λ = 120°45’, φ = 23°15’ położony jest w ćwiartce:",
+    "url": null,
+    "answers": [
+      {
+        "text": "NE",
+        "correct": true
+      },
+      {
+        "text": "SE",
+        "correct": false
+      },
+      {
+        "text": "SW",
+        "correct": false
+      },
+      {
+        "text": "NW",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0193",
+    "question": "Punkt o współrzędnych geograficznych: λ = -120°45’; φ = 23°15’ położony jest w ćwiartce:",
+    "url": null,
+    "answers": [
+      {
+        "text": "NW",
+        "correct": true
+      },
+      {
+        "text": "NE",
+        "correct": false
+      },
+      {
+        "text": "SW",
+        "correct": false
+      },
+      {
+        "text": "SE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0194",
+    "question": "Punkt o współrzędnych geograficznych: λ = 120°45’; φ = - 23°15’ położony jest w ćwiartce:",
+    "url": null,
+    "answers": [
+      {
+        "text": "SE",
+        "correct": true
+      },
+      {
+        "text": "NE",
+        "correct": false
+      },
+      {
+        "text": "SW",
+        "correct": false
+      },
+      {
+        "text": "NW",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0195",
+    "question": "Punkt o współrzędnych geograficznych: λ = -120°45’; φ = - 23°15’ położony jest w ćwiartce:",
+    "url": null,
+    "answers": [
+      {
+        "text": "SW",
+        "correct": true
+      },
+      {
+        "text": "NE",
+        "correct": false
+      },
+      {
+        "text": "SE",
+        "correct": false
+      },
+      {
+        "text": "NW",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0196",
+    "question": "Punkty A i B są oddalone od siebie o 600 m. Na mapie odcinek między nimi ma długość 6 cm. Jaka jest skala tej mapy?",
+    "url": "https://blog.awiacja.edu.pl/tag/PL060-0196",
+    "answers": [
+      {
+        "text": "1 : 10 000",
+        "correct": true
+      },
+      {
+        "text": "1 : 150 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 20 000",
+        "correct": false
+      },
+      {
+        "text": "1 : 100 000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0197",
+    "question": "Radar pierwotny funkcjonuje najczęściej na zasadzie:",
+    "url": null,
+    "answers": [
+      {
+        "text": "techniki impulsowej",
+        "correct": true
+      },
+      {
+        "text": "porównywania fazy",
+        "correct": false
+      },
+      {
+        "text": "transpondera zapytującego",
+        "correct": false
+      },
+      {
+        "text": "ciągłej emisji fali nośnej",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0198",
+    "question": "Radial w kodzie Q jest określany jako:",
+    "url": null,
+    "answers": [
+      {
+        "text": "QDR",
+        "correct": true
+      },
+      {
+        "text": "QDM",
+        "correct": false
+      },
+      {
+        "text": "QUJ",
+        "correct": false
+      },
+      {
+        "text": "QTE",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0199",
+    "question": "Radiokompas może odbierać częstotliwości w zakresie:",
+    "url": null,
+    "answers": [
+      {
+        "text": "od 150 kHz do 1800 kHz",
+        "correct": true
+      },
+      {
+        "text": "od 200 kHz do 600 kHz",
+        "correct": false
+      },
+      {
+        "text": "od 188 MHz do 413 MHz",
+        "correct": false
+      },
+      {
+        "text": "powyżej 500 MHz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0201",
+    "question": "Radiolatarnia NDB emituje fale radiowe:",
+    "url": null,
+    "answers": [
+      {
+        "text": "bezkierunkowo,",
+        "correct": true
+      },
+      {
+        "text": "w określonych sektorach",
+        "correct": false
+      },
+      {
+        "text": "kierunkowo",
+        "correct": false
+      },
+      {
+        "text": "co 10 stopni",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0204",
+    "question": "Radiolatarniami systemu GPS są:",
+    "url": null,
+    "answers": [
+      {
+        "text": "satelity GPS",
+        "correct": true
+      },
+      {
+        "text": "odbiorniki GPS",
+        "correct": false
+      },
+      {
+        "text": "stacje kontrolne",
+        "correct": false
+      },
+      {
+        "text": "radiostacje VHF",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0205",
+    "question": "Radiolatarnie NDB pracują w paśmie częstotliwości:",
+    "url": null,
+    "answers": [
+      {
+        "text": "200-1750 kHz",
+        "correct": true
+      },
+      {
+        "text": "200-1750 MHz",
+        "correct": false
+      },
+      {
+        "text": "200-600 kHz",
+        "correct": false
+      },
+      {
+        "text": "200-800 kHz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0206",
+    "question": "Radionamiernik VDF jest umieszczony na:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Ziemi",
+        "correct": true
+      },
+      {
+        "text": "pokładzie statku powietrznego",
+        "correct": false
+      },
+      {
+        "text": "satelicie systemu GPS",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0207",
+    "question": "Radionamierniki VDF pracują na częstotliwościach:",
+    "url": null,
+    "answers": [
+      {
+        "text": "130 MHz i 122.7 MHz",
+        "correct": true
+      },
+      {
+        "text": "od 108 MHz do 136.975 MHz",
+        "correct": false
+      },
+      {
+        "text": "od 88 MHz do 108 MHz",
+        "correct": false
+      },
+      {
+        "text": "powyżej 140 MHz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0210",
+    "question": "Samolot po przelocie 20 NM znajduje się 2 NM na prawo od zaplanowanej trasy. O ile należy zmienić kurs samolotu w celu osiągnięcia zaplanowanej linii drogi po następnych 20 NM?",
+    "url": null,
+    "answers": [
+      {
+        "text": "12 stopni w lewo",
+        "correct": true
+      },
+      {
+        "text": "6 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "12 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "20 stopni w lewo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0211",
+    "question": "Samolot po przelocie 25 km znajduje się 5 km na lewo od zaplanowanej trasy. O ile należy zmienić kurs samolotu w celu osiągnięcia zaplanowanej linii drogi po następnych 25 km?",
+    "url": null,
+    "answers": [
+      {
+        "text": "25 stopni w prawo",
+        "correct": true
+      },
+      {
+        "text": "5 stopni w lewo",
+        "correct": false
+      },
+      {
+        "text": "12 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "15 stopni w lewo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0212",
+    "question": "Samolot po przelocie 30 km znajduje się 4 km na lewo od zaplanowanej trasy. O ile należy zmienić kurs samolotu w celu osiągnięcia zaplanowanej linii drogi po następnych 30 km?",
+    "url": null,
+    "answers": [
+      {
+        "text": "16 stopni w prawo",
+        "correct": true
+      },
+      {
+        "text": "13 stopni w lewo",
+        "correct": false
+      },
+      {
+        "text": "12 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "8 stopni w lewo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0213",
+    "question": "Samolot po przelocie 30 km znajduje się 4 km na prawo od zaplanowanej trasy. O ile należy zmienić kurs samolotu w celu osiągnięcia zaplanowanej linii drogi po następnych 30 km?",
+    "url": null,
+    "answers": [
+      {
+        "text": "16 stopni w lewo",
+        "correct": true
+      },
+      {
+        "text": "13 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "12 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "8 stopni w lewo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0214",
+    "question": "Samolot po przelocie 40 NM znajduje się 2 NM na prawo od zaplanowanej trasy. O ile należy zmienić kurs samolotu w celu osiągnięcia zaplanowanej linii drogi po następnych 40 NM?",
+    "url": null,
+    "answers": [
+      {
+        "text": "6 stopni w lewo",
+        "correct": true
+      },
+      {
+        "text": "3 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "12 stopni w prawo",
+        "correct": false
+      },
+      {
+        "text": "9 stopni w lewo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0216",
+    "question": "Samolot wykonuje lot w kierunku radiolatarni metodą bierną (utrzymując KKR = 0). Jeśli kurs magnetyczny samolotu maleje, to znaczy, że samolot:",
+    "url": null,
+    "answers": [
+      {
+        "text": "jest znoszony w prawo",
+        "correct": true
+      },
+      {
+        "text": "jest znoszony w lewo",
+        "correct": false
+      },
+      {
+        "text": "wieje zachodni wiatr",
+        "correct": false
+      },
+      {
+        "text": "kąt znoszenia jest zerowy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0221",
+    "question": "Skrót “RVR” oznacza:",
+    "url": null,
+    "answers": [
+      {
+        "text": "runway visual range - widzialność na drodze startowej",
+        "correct": true
+      },
+      {
+        "text": "radar vectors requested - prosimy o wektorowanie radarowe",
+        "correct": false
+      },
+      {
+        "text": "runway visibility report - meldunek o widzialności drogi startowej",
+        "correct": false
+      },
+      {
+        "text": "recleared via route... - nowe zezwolenie na przelot inną trasą",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0222",
+    "question": "Skrót “SSR” oznacza:",
+    "url": null,
+    "answers": [
+      {
+        "text": "secondary surveillance radar - wtórny radar dozorowania",
+        "correct": true
+      },
+      {
+        "text": "search and surveillance radar - radar poszukiwawczy i dozorujący",
+        "correct": false
+      },
+      {
+        "text": "surface strength of runway - wytrzymałość nawierzchni drogi startowej",
+        "correct": false
+      },
+      {
+        "text": "standard snow report - standardowy meldunek o opadach i zaleganiu śniegu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0224",
+    "question": "Stacja DME znajduje się na wysokości 1000 ft AMSL. QNH=1013.25 hPa. Samolot leci na poziomie FL370, 15 NM od stacji DME. Odczyt DME będzie wynosił:",
+    "url": null,
+    "answers": [
+      {
+        "text": "16 NM",
+        "correct": true
+      },
+      {
+        "text": "15 NM",
+        "correct": false
+      },
+      {
+        "text": "18 NM",
+        "correct": false
+      },
+      {
+        "text": "37 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0229",
+    "question": "Statek powietrzny lecący w warunkach bezwietrznych z kursem 320 przecina radial 195 od VOR-a JED. Statek powietrzny znajdzie się:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Na zachód od VOR-a JED.",
+        "correct": true
+      },
+      {
+        "text": "Na wschód od VOR-a JED.",
+        "correct": false
+      },
+      {
+        "text": "Nad VOR-em JED.",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0230",
+    "question": "Statek powietrzny leci z kursem 330 stopni w warunkach bezwietrznych i przecina radial 120 od VOR/DME LIN w odległości 30 NM DME. Statek powietrzny przeleci:",
+    "url": null,
+    "answers": [
+      {
+        "text": "Po wschodniej stronie VOR/DME LIN",
+        "correct": true
+      },
+      {
+        "text": "Po zachodniej stronie VOR/DME LIN.",
+        "correct": false
+      },
+      {
+        "text": "Dokładnie nad VOR/DME LIN.",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0231",
+    "question": "Statek powietrzny planuje zniżanie ze stałą prędkością podróżną. W czasie 5 minut pilot planuje zniżenie z poziomu FL 100 do poziomu FL050. Z jaka prędkością opadania na wariometrze statek powietrzny powinien się zniżać?",
+    "url": null,
+    "answers": [
+      {
+        "text": "1000 ft/min",
+        "correct": true
+      },
+      {
+        "text": "2000 ft/min",
+        "correct": false
+      },
+      {
+        "text": "1500 ft/min",
+        "correct": false
+      },
+      {
+        "text": "500 ft/min",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0232",
+    "question": "Statek powietrzny porusza się z prędkością 120 km/h. Prędkość wiatru wynosi 30 km/h. Maksymalna wartość kąta znoszenia w tych warunkach wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "15°",
+        "correct": true
+      },
+      {
+        "text": "12°",
+        "correct": false
+      },
+      {
+        "text": "30°",
+        "correct": false
+      },
+      {
+        "text": "40°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0233",
+    "question": "Statek powietrzny porusza się z prędkością 150 km/h. Prędkość wiatru wynosi 30 km/h. Maksymalna wartość kąta znoszenia w tych warunkach wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "12°",
+        "correct": true
+      },
+      {
+        "text": "15°",
+        "correct": false
+      },
+      {
+        "text": "30°",
+        "correct": false
+      },
+      {
+        "text": "40°",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0234",
+    "question": "Statek powietrzny porusza się z prędkością podróżną 150 km/h. W czasie 14 minut przebędzie on odległość",
+    "url": null,
+    "answers": [
+      {
+        "text": "35 km",
+        "correct": true
+      },
+      {
+        "text": "14 km",
+        "correct": false
+      },
+      {
+        "text": "27 km",
+        "correct": false
+      },
+      {
+        "text": "45 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0235",
+    "question": "Statek powietrzny porusza się z prędkością podróżną 180 km/h. W czasie 18 minut przebędzie on odległość",
+    "url": null,
+    "answers": [
+      {
+        "text": "54 km",
+        "correct": true
+      },
+      {
+        "text": "36 km",
+        "correct": false
+      },
+      {
+        "text": "18 km",
+        "correct": false
+      },
+      {
+        "text": "68 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0236",
+    "question": "Statek powietrzny startuje z lotniska o elewacji 1500 ft MSL i wznosi się z prędkością pionową 600 ft/min. Jego średnia prędkość podróżna wynosi 90 węzłów, a ciśnienie QNH = 1013.2 hPa. W jakiej odległości od lotniska osiągnięty zostanie FL 75?",
+    "url": null,
+    "answers": [
+      {
+        "text": "15 NM",
+        "correct": true
+      },
+      {
+        "text": "18 NM",
+        "correct": false
+      },
+      {
+        "text": "20 NM",
+        "correct": false
+      },
+      {
+        "text": "12 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0237",
+    "question": "Statek powietrzny startuje z lotniska o elewacji 500 ft MSL i wznosi się z prędkością pionową 500 ft/min. Jego średnia prędkość podróżna wynosi 100 węzłów, a ciśnienie QNH = 1013.2 hPa. W jakiej odległości od lotniska osiągnięty zostanie FL 80?",
+    "url": null,
+    "answers": [
+      {
+        "text": "25 NM",
+        "correct": true
+      },
+      {
+        "text": "18 NM",
+        "correct": false
+      },
+      {
+        "text": "21 NM",
+        "correct": false
+      },
+      {
+        "text": "12.5 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0238",
+    "question": "Statek powietrzny utrzymuje kurs magnetyczny 060 stopni. Deklinacja wynosi 8 stopni W. Kąt znoszenia +4 stopnie. Z jakim geograficznym kątem drogi przemieszcza się ten statek?",
+    "url": null,
+    "answers": [
+      {
+        "text": "72",
+        "correct": true
+      },
+      {
+        "text": "56",
+        "correct": false
+      },
+      {
+        "text": "64",
+        "correct": false
+      },
+      {
+        "text": "48",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0243",
+    "question": "System GPS działa w paśmie ... na zasadzie ... .",
+    "url": null,
+    "answers": [
+      {
+        "text": "UHF, pomiaru o opóźnienia odbioru sygnału (odległości) na drodze odbiornik - satelity.",
+        "correct": true
+      },
+      {
+        "text": "SHF, podobnie do radaru wtórnego - pytanie-odzew.",
+        "correct": false
+      },
+      {
+        "text": "SHF, pomiaru o odległości do minimum 24 satelitów.",
+        "correct": false
+      },
+      {
+        "text": "HF, informacji o odległości do co najmniej 4 satelitów.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0244",
+    "question": "Średnia prędkość podróżna statku powietrznego wynosi 150 km/h. W czasie 18 minut zostanie przebyta odległość",
+    "url": null,
+    "answers": [
+      {
+        "text": "45 km",
+        "correct": true
+      },
+      {
+        "text": "18 km",
+        "correct": false
+      },
+      {
+        "text": "27 km",
+        "correct": false
+      },
+      {
+        "text": "35 km",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0245",
+    "question": "Tabele wschodów i zachodów słońca znajdują się w AIP Polska w rozdziale:",
+    "url": null,
+    "answers": [
+      {
+        "text": "GEN",
+        "correct": true
+      },
+      {
+        "text": "ENR",
+        "correct": false
+      },
+      {
+        "text": "AD",
+        "correct": false
+      },
+      {
+        "text": "RAC",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0246",
+    "question": "Urządzeniem pokładowym współpracującym z radiolatarnią NDB jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "radiokompas",
+        "correct": true
+      },
+      {
+        "text": "radiostacja średniofalowa",
+        "correct": false
+      },
+      {
+        "text": "radionamiernik VHF",
+        "correct": false
+      },
+      {
+        "text": "transponder",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0247",
+    "question": "Urządzeniem pokładowym współpracującym z radionamiernikiem VDF jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "radiostacja komunikacyjna VHF",
+        "correct": true
+      },
+      {
+        "text": "radar wtórny",
+        "correct": false
+      },
+      {
+        "text": "radiodalmierz DME",
+        "correct": false
+      },
+      {
+        "text": "radiokompas ADF",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0248",
+    "question": "VOR jest radionawigacyjnym systemem:",
+    "url": null,
+    "answers": [
+      {
+        "text": "kątowym",
+        "correct": true
+      },
+      {
+        "text": "odległościowo-kątowym,",
+        "correct": false
+      },
+      {
+        "text": "odległościowym,",
+        "correct": false
+      },
+      {
+        "text": "hiperbolicznym",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0249",
+    "question": "VOR podaje kąt namiaru na radiolatarnię:",
+    "url": null,
+    "answers": [
+      {
+        "text": "względem południka magnetycznego samolotu,",
+        "correct": true
+      },
+      {
+        "text": "względem osi podłużnej statku powietrznego,",
+        "correct": false
+      },
+      {
+        "text": "względem południka geograficznego samolotu",
+        "correct": false
+      },
+      {
+        "text": "względem południka busoli",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0251",
+    "question": "W jakim celu stosuje się impuls SPI?",
+    "url": null,
+    "answers": [
+      {
+        "text": "jako impuls służący do identyfikacji statku powietrznego",
+        "correct": true
+      },
+      {
+        "text": "jako impuls kodu alarmowego",
+        "correct": false
+      },
+      {
+        "text": "jako impuls służący do tłumienia zakłóceń",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0252",
+    "question": "W jakim modzie wysyłane jest zapytanie o wysokość?",
+    "url": null,
+    "answers": [
+      {
+        "text": "w modzie 'C'",
+        "correct": true
+      },
+      {
+        "text": "w modzie '3/A'",
+        "correct": false
+      },
+      {
+        "text": "w modzie 'D'",
+        "correct": false
+      },
+      {
+        "text": "w modzie 'B'",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0253",
+    "question": "W przypadku, kiedy nadajnik i odbiornik poruszają się względem siebie (ruch względny) to zachodzi zjawisko:",
+    "url": null,
+    "answers": [
+      {
+        "text": "zmiana częstotliwości proporcjonalna do prędkości w ruchu względnym.",
+        "correct": true
+      },
+      {
+        "text": "interferencji pozwalające na mierzenie prędkości.",
+        "correct": false
+      },
+      {
+        "text": "rozproszenia - zmieniające słyszalność korespondencji.",
+        "correct": false
+      },
+      {
+        "text": "zmiana częstotliwości odwrotnie proporcjonalna do prędkości w ruchu względnym.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0254",
+    "question": "W sytuacji COMMUNICATION  FAILURE pilot włącza transponder w modzie A na kod:",
+    "url": null,
+    "answers": [
+      {
+        "text": "7600",
+        "correct": true
+      },
+      {
+        "text": "7000",
+        "correct": false
+      },
+      {
+        "text": "7500",
+        "correct": false
+      },
+      {
+        "text": "7700",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0255",
+    "question": "W sytuacji EMERGENCY pilot włącza transponder w modzie A na kod:",
+    "url": null,
+    "answers": [
+      {
+        "text": "7700",
+        "correct": true
+      },
+      {
+        "text": "7000",
+        "correct": false
+      },
+      {
+        "text": "7500",
+        "correct": false
+      },
+      {
+        "text": "7600",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0256",
+    "question": "W sytuacji HIJACK pilot włącza transponder w modzie A na kod:",
+    "url": null,
+    "answers": [
+      {
+        "text": "7500",
+        "correct": true
+      },
+      {
+        "text": "7000",
+        "correct": false
+      },
+      {
+        "text": "7600",
+        "correct": false
+      },
+      {
+        "text": "7700",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0257",
+    "question": "Wartość ciśnienia standardowego wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "760 mmHg",
+        "correct": true
+      },
+      {
+        "text": "750 mmHg",
+        "correct": false
+      },
+      {
+        "text": "1000 mmHg",
+        "correct": false
+      },
+      {
+        "text": "1013 mmHg",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0258",
+    "question": "Wartość ciśnienia standardowego wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "1013 hPa",
+        "correct": true
+      },
+      {
+        "text": "760 hPa",
+        "correct": false
+      },
+      {
+        "text": "1000 hPa",
+        "correct": false
+      },
+      {
+        "text": "750 hPa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0261",
+    "question": "Współpraca części pokładowej DME z radiolatarnią naziemną wymaga:",
+    "url": null,
+    "answers": [
+      {
+        "text": "dwóch częstotliwości radiowych",
+        "correct": true
+      },
+      {
+        "text": "jednej częstotliwości radiowej",
+        "correct": false
+      },
+      {
+        "text": "trzech częstotliwości radiowych",
+        "correct": false
+      },
+      {
+        "text": "czterech częstotliwości radiowych",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0265",
+    "question": "Zakładając, że powietrze jest nieściśliwe i sposób umieszczenia nadajników ciśnienia na samolocie nie powoduje błędów wskazań prędkościomierza, to prędkość rzeczywista TAS jest równa:",
+    "url": null,
+    "answers": [
+      {
+        "text": "prędkości wskazywanej IAS w warunkach bezwietrznych",
+        "correct": true
+      },
+      {
+        "text": "prędkości wskazywanej IAS poprawionej o wartość poprawki na błąd gęstości powietrza",
+        "correct": false
+      },
+      {
+        "text": "prędkości podróżnej (GS), gdy uwzględnimy wpływ wiatru",
+        "correct": false
+      },
+      {
+        "text": "liczbie Macha (Ma)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0270",
+    "question": "Zakres częstotliwości pracy radiodalmierza DME wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "od 960 MHz do 1215 MHz",
+        "correct": true
+      },
+      {
+        "text": "od 118.0 MHz do 137.9 MHz",
+        "correct": false
+      },
+      {
+        "text": "od 500 MHz do 1.8 GHz",
+        "correct": false
+      },
+      {
+        "text": "od 112 MHz do 117.900 MHz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0272",
+    "question": "Zasięg, z jakiego można odbierać sygnały ze stacji naziemnej NDB jest:",
+    "url": null,
+    "answers": [
+      {
+        "text": "większy nad morzem niż obszarami lądowymi.",
+        "correct": true
+      },
+      {
+        "text": "mniejszy nad morzem niż obszarami lądowymi",
+        "correct": false
+      },
+      {
+        "text": "nie różni się.",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0273",
+    "question": "Zjawisko załamania fali na brzegu (morze/ląd):",
+    "url": null,
+    "answers": [
+      {
+        "text": "można zminimalizować jego wpływ przez branie namiarów na stacje, których sygnał dochodząc do odbiornika przecina brzeg pod kątem prostym.",
+        "correct": true
+      },
+      {
+        "text": "występuje tylko w czasie wschodów i zachodów słońca",
+        "correct": false
+      },
+      {
+        "text": "można zminimalizować przez branie namiarów na stacje położone jak najdalej w głąb lądu",
+        "correct": false
+      },
+      {
+        "text": "występuje głównie w nocy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0274",
+    "question": "Zniżanie jest planowane z wysokości 7000 ft w ten sposób, żeby osiągnąć 1000 ft AMSL w odległości 6 NM od stacji VOR/DME. Prędkość podróżna wynosi 180kt a prędkość opadania 1000ft/min. Odległość od stacji w chwili rozpoczęcia zniżania wynosi:",
+    "url": null,
+    "answers": [
+      {
+        "text": "24 NM",
+        "correct": true
+      },
+      {
+        "text": "18 NM",
+        "correct": false
+      },
+      {
+        "text": "60 NM",
+        "correct": false
+      },
+      {
+        "text": "13 NM",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "PL060-0275",
+    "question": "Źródłem czasu w systemie GPS są:",
+    "url": null,
+    "answers": [
+      {
+        "text": "własne zegary atomowe satelity.",
+        "correct": true
+      },
+      {
+        "text": "radiostacja DCF-77 we Frankfurcie,",
+        "correct": false
+      },
+      {
+        "text": "wewnętrzny zegar kwarcowy odbiornika,",
+        "correct": false
+      },
+      {
+        "text": "żadna z odpowiedzi nie jest prawdziwa",
+        "correct": false
+      }
+    ]
+  }
+]
